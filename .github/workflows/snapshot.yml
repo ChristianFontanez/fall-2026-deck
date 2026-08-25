@@ -1,0 +1,57 @@
+name: Build dashboard snapshot
+
+on:
+  schedule:
+    - cron: "*/20 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "snapshot.html"
+      - "data/**"
+      - ".github/**"
+
+concurrency:
+  group: snapshot
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout dashboard repo
+        uses: actions/checkout@v4
+
+      - name: Checkout Obsidian vault (private)
+        uses: actions/checkout@v4
+        with:
+          repository: ChristianFontanez/obsidian-vault
+          token: ${{ secrets.VAULT_TOKEN }}
+          path: vault
+          persist-credentials: false
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build snapshot
+        env:
+          VAULT_DIR: vault
+          CANVAS_ICS: ${{ secrets.CANVAS_ICS }}
+        run: node scripts/build-snapshot.mjs
+
+      - name: Commit if changed
+        run: |
+          git config user.name "deck-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add snapshot.html data/canvas.json
+          if git diff --staged --quiet; then
+            echo "No changes."
+          else
+            git commit -m "snapshot: refresh [skip ci]"
+            git push
+          fi
