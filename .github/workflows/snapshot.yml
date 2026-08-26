@@ -54,7 +54,8 @@ jobs:
         run: |
           git config user.name "deck-bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/canvas.json snapshot.html 2>/dev/null || true
+          git add data/canvas.json 2>/dev/null || true
+          [ -f snapshot.html ] && git add snapshot.html || true
           if git diff --staged --quiet; then
             echo "No changes."
           else
