@@ -203,11 +203,18 @@
   .chip.active { background:var(--accent-soft); border-color:var(--accent); color:var(--accent); }
   .chip .dotc { width:8px; height:8px; border-radius:50%; }
   .chip:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
-  .cv { flex:0 0 auto; min-width:172px; max-width:240px; background:var(--surface); border:1px solid var(--line);
-    border-left:3px solid var(--cc); border-radius:var(--radius); padding:11px 13px; box-shadow:var(--shadow); }
+  a.cv, .cv { flex:0 0 auto; min-width:210px; max-width:270px; background:var(--surface); border:1px solid var(--line);
+    border-left:3px solid var(--cc); border-radius:var(--radius); padding:11px 13px; box-shadow:var(--shadow);
+    text-decoration:none; color:inherit; display:block; transition:box-shadow .15s, transform .15s; }
+  a.cv:hover { box-shadow:var(--shadow-lift); transform:translateY(-1px); }
+  a.cv:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  @media (prefers-reduced-motion:reduce) { a.cv:hover { transform:none; } }
+  .cv .cv-top { display:flex; align-items:center; justify-content:space-between; gap:6px; }
   .cv .cv-course { font-size:11px; font-weight:700; color:var(--cc); }
-  .cv .cv-name { font-size:12.5px; margin-top:2px; color:var(--ink); }
-  .cv .cv-due { font-size:11px; color:var(--muted); margin-top:7px; font-family:"IBM Plex Mono",monospace; }
+  .cv .cv-link { font-size:12px; color:var(--muted); }
+  .cv .cv-name { font-size:12.5px; margin-top:2px; color:var(--ink); font-weight:500; line-height:1.3; }
+  .cv .cv-desc { font-size:11px; color:var(--muted); margin-top:6px; line-height:1.4; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .cv .cv-due { font-size:11px; color:var(--muted); margin-top:8px; font-family:"IBM Plex Mono",monospace; }
   .cv .cv-due.soon { color:var(--warn); } .cv .cv-due.over { color:var(--crit); }
   .snaplink a { color:var(--accent); }
 
@@ -452,14 +459,21 @@
       var d=Math.round((new Date(c.due+"T00:00:00")-today)/86400000);
       if(filters.cls!=="all" && c.courseKey!==filters.cls) return false;
       return d>=-1; }).sort(function(a,b){ return new Date(a.due)-new Date(b.due); }).slice(0,16);
-    if(!up.length){ host.innerHTML='<div class="tl-empty">No upcoming Canvas assignments'+(canvasItems.length?'':' — Canvas feed is optional (see README)')+'.</div>'; return; }
+    if(!up.length){ host.innerHTML='<div class="tl-empty">No upcoming Canvas assignments'+(canvasItems.length?'':' — add the CANVAS_ICS secret to enable (see README)')+'.</div>'; return; }
     host.innerHTML=up.map(function(c){
       var d=Math.round((new Date(c.due+"T00:00:00")-today)/86400000);
       var cls=d<0?"over":d<=2?"soon":"";
       var hue=(COURSES[c.courseKey]||{}).hue||"var(--accent)";
       var lbl=d===0?"today":d===1?"tomorrow":d<0?Math.abs(d)+"d ago":"in "+d+"d";
       var date=new Date(c.due+"T00:00:00").toLocaleDateString([], {month:"short",day:"numeric"});
-      return '<div class="cv" style="--cc:'+hue+'"><div class="cv-course">'+esc(c.code||"")+'</div><div class="cv-name">'+esc(c.title)+'</div><div class="cv-due '+cls+'">'+esc(date)+' · '+esc(lbl)+'</div></div>';
+      var open = c.url ? '<a class="cv" href="'+esc(c.url)+'" target="_blank" rel="noopener" style="--cc:'+hue+'">' : '<div class="cv" style="--cc:'+hue+'">';
+      var close = c.url ? '</a>' : '</div>';
+      return open
+        +'<div class="cv-top"><span class="cv-course">'+esc(c.code||"")+'</span>'+(c.url?'<span class="cv-link">↗</span>':'')+'</div>'
+        +'<div class="cv-name">'+esc(c.title)+'</div>'
+        +(c.desc?'<div class="cv-desc">'+esc(c.desc)+'</div>':'')
+        +'<div class="cv-due '+cls+'">'+esc(date)+' · '+esc(lbl)+'</div>'
+        +close;
     }).join("");
   }
   function fetchCanvas(){

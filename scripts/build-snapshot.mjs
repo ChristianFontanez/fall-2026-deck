@@ -230,10 +230,10 @@ for (const f of files) {
   const rel = f.slice(VAULT_DIR.length + 1).replace(/\\/g, "/");
   tasks = tasks.concat(parseFile(rel, readFileSync(f, "utf8")));
 }
-const canvas = await loadCanvas();
+// Canvas data is produced by build-canvas.mjs (runs first). Read it if present.
+let canvas = [];
+try { const cj = JSON.parse(readFileSync(join(OUT_DIR, "data", "canvas.json"), "utf8")); canvas = cj.items || []; } catch { canvas = []; }
 const builtAt = new Date();
 
-mkdirSync(join(OUT_DIR, "data"), { recursive: true });
-writeFileSync(join(OUT_DIR, "data", "canvas.json"), JSON.stringify({ builtAt: builtAt.toISOString(), items: canvas }, null, 2));
 writeFileSync(join(OUT_DIR, "snapshot.html"), render(tasks, canvas, builtAt));
 console.log(`Snapshot built: ${tasks.length} tasks from ${files.length} notes, ${canvas.length} Canvas items.`);
