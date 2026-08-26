@@ -1,0 +1,26 @@
+{
+  "builtAt": "2026-08-26T23:29:57.166Z",
+  "items": [
+    {
+      "title": "Review Day 1 slides",
+      "due": "2026-08-26",
+      "code": "CMS 450",
+      "courseKey": "cms450",
+      "key": "47372da019e7"
+    },
+    {
+      "title": "Activity: Statistical Multiplexing Problem Set",
+      "due": "2026-08-26",
+      "code": "CMS 450",
+      "courseKey": "cms450",
+      "key": "d783c4a39a10"
+    },
+    {
+      "title": "Week 1 Homework: Section 1.1-1.4",
+      "due": "2026-09-01",
+      "code": "MAT 219",
+      "courseKey": "mat219",
+      "key": "bebc5f49a831"
+    }
+  ]
+}
