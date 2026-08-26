@@ -218,6 +218,32 @@
   .cv .cv-due.soon { color:var(--warn); } .cv .cv-due.over { color:var(--crit); }
   .snaplink a { color:var(--accent); }
 
+  /* ---- phase 2: assignment linking ---- */
+  .card .c-actions { margin-left:auto; display:flex; align-items:center; gap:2px; }
+  .card .c-link { width:22px; height:22px; border-radius:6px; border:1px solid transparent; background:transparent; color:var(--muted);
+    cursor:pointer; display:grid; place-items:center; padding:0; }
+  .card .c-link:hover { color:var(--accent); border-color:var(--accent); background:var(--accent-soft); }
+  .card .c-link.on { color:var(--accent); }
+  .card .c-del { margin-left:0; }
+  .card .c-assign { display:inline-flex; align-items:center; gap:5px; margin-top:7px; font-size:11px; font-weight:600;
+    color:var(--accent); background:var(--accent-soft); border:1px solid color-mix(in srgb,var(--accent) 25%,var(--line));
+    border-radius:6px; padding:3px 8px; max-width:100%; }
+  .card .c-assign span { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .card .c-assign svg { flex:none; }
+  .cv .cv-prep { display:flex; align-items:center; gap:8px; margin-top:8px; }
+  .cv .cv-prep-lbl { font-size:10.5px; font-weight:700; color:var(--muted); font-family:"IBM Plex Mono",monospace; white-space:nowrap; }
+  .cv .cv-prep-lbl.full { color:var(--good); }
+  .cv .cv-bar { flex:1; height:5px; border-radius:999px; background:var(--surface-2); overflow:hidden; }
+  .cv .cv-bar > i { display:block; height:100%; background:var(--cc); border-radius:999px; }
+  .link-list { display:flex; flex-direction:column; gap:6px; max-height:52vh; overflow-y:auto; }
+  .link-item { display:flex; align-items:center; gap:9px; width:100%; text-align:left; font:inherit; cursor:pointer;
+    border:1px solid var(--line); background:var(--surface); border-radius:var(--radius-sm); padding:9px 11px; color:var(--ink); }
+  .link-item:hover { border-color:var(--accent); background:var(--accent-soft); }
+  .link-item.sel { border-color:var(--accent); box-shadow:inset 0 0 0 1px var(--accent); }
+  .link-item .li-code { font-size:11px; font-weight:700; flex:none; }
+  .link-item .li-title { font-size:13px; flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .link-item .li-when { font-size:11px; color:var(--muted); flex:none; }
+
   .skeleton .board, .skeleton .timeline, .skeleton .rails, .skeleton .exam-strip { opacity:.45; }
 
   @media (max-width:860px) {
@@ -323,6 +349,12 @@
   </form>
 </dialog>
 
+<dialog class="dlg" id="linkDlg">
+  <div class="dlg-head"><h3>Link to an assignment</h3><p id="linkSub"></p></div>
+  <div class="dlg-body"><div id="linkList" class="link-list"></div></div>
+  <div class="dlg-foot"><button class="btn danger" id="linkUnlink">Unlink</button><span class="spacer"></span><button class="btn" id="linkClose">Close</button></div>
+</dialog>
+
 <script>
 (function(){
   "use strict";
@@ -396,6 +428,7 @@
       var isExam = tags.indexOf("exam")!==-1;
       var courseKey=null;
       ["cms450","mat219","cms270"].forEach(function(k){ if(tags.indexOf(k)!==-1) courseKey=k; });
+      var assignmentId=null; tags.forEach(function(tg){ var am=tg.match(/^cid(\d+)$/); if(am) assignmentId=am[1]; });
       // clean title: strip tasks emoji+dates and tags
       var title=raw
         .replace(/[\uD83D\uDCC5\u23F3\uD83D\uDEEB\u2795\u2705\u274C\uD83D\uDD01\u23EB\uD83D\uDD3C\uD83D\uDD3D\uD83D\uDD3A]\s*\d{4}-\d{2}-\d{2}/g,"")
@@ -403,7 +436,7 @@
         .replace(/#[A-Za-z0-9_\-\/]+/g,"").replace(/\s+/g," ").trim();
       var status = (statusChar==="x"||statusChar==="X")?"done":(statusChar==="/"?"inprogress":(statusChar==="-"?"done":"todo"));
       out.push({ path:path, file:path.split("/").pop().replace(/\.md$/,""), line:i, raw:line, statusChar:statusChar,
-        status:status, title:title, due:due, tags:tags, isExam:isExam, courseKey:courseKey });
+        status:status, title:title, due:due, tags:tags, isExam:isExam, courseKey:courseKey, assignmentId:assignmentId });
     }
     return out;
   }
@@ -413,6 +446,12 @@
   function codeOf(t){ var c=courseOf(t); return c?c.code:"Note"; }
   function examKeyFromTitle(title){ var m=(title.match(/(CMS 450|MAT 219|CMS 270)/)||[])[1];
     return m==="CMS 450"?"cms450":m==="MAT 219"?"mat219":m==="CMS 270"?"cms270":null; }
+  var LINK_SVG='<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1.5-1.5"/></svg>';
+  function canvasById(id){ if(id==null) return null; for(var i=0;i<canvasItems.length;i++){ if(String(canvasItems[i].id)===String(id)) return canvasItems[i]; } return null; }
+  function assignmentsFor(courseKey){ return canvasItems.filter(function(c){ return !courseKey || c.courseKey===courseKey; })
+    .sort(function(a,b){ return (a.due||"9")<(b.due||"9")?-1:(a.due||"9")>(b.due||"9")?1:0; }); }
+  function prepStats(assignmentId){ var t=tasks.filter(function(x){ return !x.isExam && x.assignmentId===String(assignmentId); });
+    return { total:t.length, done:t.filter(function(x){return x.status==="done";}).length }; }
 
   function dueInfo(t){
     if(!t.due) return {txt:"no date",cls:"",ts:Infinity,diffDays:null};
@@ -466,12 +505,16 @@
       var hue=(COURSES[c.courseKey]||{}).hue||"var(--accent)";
       var lbl=d===0?"today":d===1?"tomorrow":d<0?Math.abs(d)+"d ago":"in "+d+"d";
       var date=new Date(c.due+"T00:00:00").toLocaleDateString([], {month:"short",day:"numeric"});
+      var ps=prepStats(c.id);
+      var pct=ps.total?Math.round(ps.done/ps.total*100):0;
+      var prep = ps.total ? '<div class="cv-prep"><span class="cv-prep-lbl'+(ps.done===ps.total?' full':'')+'">prep '+ps.done+'/'+ps.total+'</span><span class="cv-bar"><i style="width:'+pct+'%"></i></span></div>' : '';
       var open = c.url ? '<a class="cv" href="'+esc(c.url)+'" target="_blank" rel="noopener" style="--cc:'+hue+'">' : '<div class="cv" style="--cc:'+hue+'">';
       var close = c.url ? '</a>' : '</div>';
       return open
         +'<div class="cv-top"><span class="cv-course">'+esc(c.code||"")+'</span>'+(c.url?'<span class="cv-link">↗</span>':'')+'</div>'
         +'<div class="cv-name">'+esc(c.title)+'</div>'
         +(c.desc?'<div class="cv-desc">'+esc(c.desc)+'</div>':'')
+        + prep
         +'<div class="cv-due '+cls+'">'+esc(date)+' · '+esc(lbl)+'</div>'
         +close;
     }).join("");
@@ -526,10 +569,16 @@
   function taskUID(t){ return t.path+"::"+t.line+"::"+t.title.toLowerCase(); }
   function cardHTML(t){
     var di=dueInfo(t), dueCls=t.status==="done"?"done":di.cls;
+    var asg = t.assignmentId ? canvasById(t.assignmentId) : null;
+    var chip = t.assignmentId
+      ? '<div class="c-assign" title="Linked Canvas assignment">'+LINK_SVG+'<span>'+esc(asg?asg.title:("assignment "+t.assignmentId))+'</span></div>'
+      : '';
     return '<div class="card" draggable="true" data-uid="'+esc(taskUID(t))+'" style="--cc:'+hueOf(t)+'">'
       +'<div class="c-top"><span class="c-course">'+esc(codeOf(t))+'</span><span class="c-type">'+esc(t.file)+'</span>'
-      +'<button class="c-del" title="Delete task (removes the line from the note)" aria-label="Delete">×</button></div>'
+      +'<span class="c-actions"><button class="c-link'+(t.assignmentId?' on':'')+'" data-act="link" title="Link to a Canvas assignment" aria-label="Link to assignment">'+LINK_SVG+'</button>'
+      +'<button class="c-del" title="Delete task (removes the line from the note)" aria-label="Delete">×</button></span></div>'
       +'<div class="c-title">'+esc(t.title)+'</div>'
+      + chip
       +'<div class="c-foot"><span class="c-due '+dueCls+'">'+(t.status==="done"?"✓ done":esc(di.txt))+'</span>'
       +'<span class="moves"><button class="mv" data-mv="back" '+(t.status==="todo"?"disabled":"")+' aria-label="Move left">‹</button>'
       +'<button class="mv" data-mv="fwd" '+(t.status==="done"?"disabled":"")+' aria-label="Move right">›</button></span></div></div>';
@@ -598,6 +647,36 @@
     .catch(function(e){ busy=false; toast((e&&e.msg)||"Delete failed",true); if(e&&(e.code==="conflict"||e.code==="moved"))load(true); else setSync("err","Error"); });
   }
 
+  function setAssignment(uid, aid){
+    var t=findTask(uid); if(!t) return; if(busy) return; busy=true; setSync("loading","Saving…");
+    getFile(t.path).then(function(f){ if(!f)throw{code:"notfound",msg:"File gone"}; var lines=b64decode(f.content).split("\n");
+      var idx=pickLine(lines,t); if(idx<0)throw{code:"moved",msg:"Task line not found — refreshing"};
+      var out=lines[idx].replace(/\s*#cid\d+/gi,"");                 // strip any existing link
+      if(aid) out=out.replace(/\s*$/,"")+" #cid"+aid;                // add new link
+      lines[idx]=out;
+      return putFile(t.path, lines.join("\n"), f.sha, aid?("deck: link to assignment "+aid):"deck: unlink assignment"); })
+    .then(function(){ busy=false; toast(aid?"Linked":"Unlinked"); load(true); })
+    .catch(function(e){ busy=false; toast((e&&e.msg)||"Link failed",true); if(e&&(e.code==="conflict"||e.code==="moved"))load(true); else setSync("err","Error"); });
+  }
+
+  var linkUid=null;
+  function openLink(uid){
+    var t=findTask(uid); if(!t) return; linkUid=uid;
+    el("linkSub").textContent = '“'+t.title+'”' + (t.courseKey?(' · '+COURSES[t.courseKey].code):'');
+    var list=assignmentsFor(t.courseKey);
+    var today=startOfToday();
+    var html = list.length ? list.map(function(c){
+      var d=c.due?Math.round((new Date(c.due+"T00:00:00")-today)/86400000):null;
+      var when=c.due?(d===0?"today":d===1?"tomorrow":d<0?Math.abs(d)+"d ago":"in "+d+"d"):"";
+      var sel = t.assignmentId===String(c.id) ? ' sel' : '';
+      return '<button class="link-item'+sel+'" data-aid="'+esc(c.id)+'"><span class="li-code" style="color:'+((COURSES[c.courseKey]||{}).hue||'var(--accent)')+'">'+esc(c.code||"")+'</span><span class="li-title">'+esc(c.title)+'</span><span class="li-when mono">'+esc(when)+'</span></button>';
+    }).join("") : '<div class="tl-empty" style="padding:14px 2px">No Canvas assignments'+(t.courseKey?(' for '+COURSES[t.courseKey].code):'')+' yet.</div>';
+    el("linkList").innerHTML=html;
+    el("linkUnlink").style.display = t.assignmentId ? "" : "none";
+    el("linkList").querySelectorAll(".link-item").forEach(function(b){ b.addEventListener("click",function(){ el("linkDlg").close(); setAssignment(linkUid, b.getAttribute("data-aid")); }); });
+    el("linkDlg").showModal();
+  }
+
   function addTask(text, classKey, due){
     if(busy) return; busy=true; setSync("loading","Saving…");
     var line="- [ ] "+text.trim()+(due?" \uD83D\uDCC5 "+due:"")+(classKey?" #"+classKey:"");
@@ -621,6 +700,7 @@
       var uid=btn.closest(".card").dataset.uid, t=findTask(uid); if(!t)return; var i=ORDER.indexOf(t.status)+(btn.dataset.mv==="fwd"?1:-1);
       if(i>=0&&i<3) setStatus(uid,ORDER[i]); }); });
     document.querySelectorAll(".card .c-del").forEach(function(btn){ btn.addEventListener("click",function(e){ e.stopPropagation(); deleteTask(btn.closest(".card").dataset.uid); }); });
+    document.querySelectorAll(".card .c-link").forEach(function(btn){ btn.addEventListener("click",function(e){ e.stopPropagation(); openLink(btn.closest(".card").dataset.uid); }); });
   }
   document.querySelectorAll(".col-body").forEach(function(body){
     body.addEventListener("dragover",function(e){ e.preventDefault(); body.classList.add("drop-hint"); });
@@ -668,6 +748,8 @@
   el("settingsBtn").addEventListener("click",function(){ el("settingsRepo").textContent=CFG.owner+"/"+CFG.repo+" · branch "+CFG.branch;
     el("tokenState").textContent = token?"Connected. Token stored in this browser only.":"No token set."; el("settingsDlg").showModal(); });
   el("settingsClose").addEventListener("click",function(){ el("settingsDlg").close(); });
+  el("linkClose").addEventListener("click",function(){ el("linkDlg").close(); });
+  el("linkUnlink").addEventListener("click",function(){ el("linkDlg").close(); if(linkUid) setAssignment(linkUid, null); });
   el("clearToken").addEventListener("click",function(){ token=null; lsDel(LS_TOKEN); el("settingsDlg").close(); toast("Token cleared"); load(false); });
   el("themeBtn").addEventListener("click",function(){ var root=document.documentElement,cur=root.getAttribute("data-theme");
     var next=cur==="dark"?"light":cur==="light"?"dark":(matchMedia("(prefers-color-scheme: dark)").matches?"light":"dark");
