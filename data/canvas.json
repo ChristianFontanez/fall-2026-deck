@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-08-26T18:08:45.084Z",
+  "builtAt": "2026-08-26T20:12:23.040Z",
   "items": [
     {
       "id": "400986",
@@ -40,6 +40,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/398848",
       "desc": "Work through (in-class as pairs) the actual tradeoff between circuit switching's guarantees and packet switching's efficiency, with numbers instead of just concepts.\nSubmissions will be done in class."
+    },
+    {
+      "id": "407908",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - Section 1.4",
+      "due": "2026-08-28",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/407908",
+      "desc": ""
     },
     {
       "id": "395721",
