@@ -1,0 +1,135 @@
+{
+  "builtAt": "2026-08-26T00:32:45.202Z",
+  "items": [
+    {
+      "id": "400986",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "First Day Survey",
+      "due": "2026-08-26",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/400986",
+      "desc": "This quiz is a chance for me to get to know you better."
+    },
+    {
+      "id": "400979",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Syllabus Quiz",
+      "due": "2026-08-26",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/400979",
+      "desc": ""
+    },
+    {
+      "id": "406494",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment: Sections 1.2.2–1.2.5 & 1.3",
+      "due": "2026-08-26",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/406494",
+      "desc": ""
+    },
+    {
+      "id": "398848",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Statistical Multiplexing Problem Set",
+      "due": "2026-08-26",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/398848",
+      "desc": "Work through (in-class as pairs) the actual tradeoff between circuit switching's guarantees and packet switching's efficiency, with numbers instead of just concepts.\nSubmissions will be done in class."
+    },
+    {
+      "id": "395721",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: First Capture",
+      "due": "2026-08-28",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/395721",
+      "desc": "Learning goal:\nGet comfortable opening Wireshark, starting a capture, and recognizing that the \"network\" is actually a stream of readable, identifiable traffic, not a black box.\nMaterials needed:\n* Laptop\n* Wireshark installed (pre-class requirement)"
+    },
+    {
+      "id": "398849",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Delay-Calculation Problem Set",
+      "due": "2026-08-31",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/398849",
+      "desc": ""
+    },
+    {
+      "id": "406764",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Week 1 Homework: Section 1.1-1.4",
+      "due": "2026-09-01",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/406764",
+      "desc": ""
+    },
+    {
+      "id": "398850",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Traceroute Lab",
+      "due": "2026-09-02",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/398850",
+      "desc": ""
+    },
+    {
+      "id": "398653",
+      "courseKey": "cms270",
+      "code": "CMS 270",
+      "title": "Lab 1",
+      "due": "2026-09-02",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25418/assignments/398653",
+      "desc": ""
+    },
+    {
+      "id": "395719",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Layering Scavenger Hunt",
+      "due": "2026-09-04",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/395719",
+      "desc": ""
+    },
+    {
+      "id": "398193",
+      "courseKey": "cms270",
+      "code": "CMS 270",
+      "title": "Assignment 1: Inventory System",
+      "due": "2026-09-06",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25418/assignments/398193",
+      "desc": ""
+    },
+    {
+      "id": "397151",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Week 2: Problem Set",
+      "due": "2026-09-06",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/397151",
+      "desc": ""
+    },
+    {
+      "id": "398672",
+      "courseKey": "cms270",
+      "code": "CMS 270",
+      "title": "Lab 2",
+      "due": "2026-09-16",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25418/assignments/398672",
+      "desc": ""
+    }
+  ]
+}
