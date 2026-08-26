@@ -59,7 +59,9 @@ function parseFile(relPath, text) {
     const title = raw.replace(new RegExp(EMOJI.source + "\\s*\\d{4}-\\d{2}-\\d{2}", "gu"), "")
       .replace(EMOJI, "").replace(/#[A-Za-z0-9_\-\/]+/g, "").replace(/\s+/g, " ").trim();
     const status = (sc === "x" || sc === "X" || sc === "-") ? "done" : (sc === "/" ? "inprogress" : "todo");
-    out.push({ file: relPath.split("/").pop().replace(/\.md$/, ""), title, due, status, courseKey, isExam: tags.includes("exam") });
+    const cidTag = tags.find((t) => /^cid\d+$/.test(t));
+    const assignmentId = cidTag ? cidTag.slice(3) : null;
+    out.push({ file: relPath.split("/").pop().replace(/\.md$/, ""), title, due, status, courseKey, isExam: tags.includes("exam"), assignmentId });
   });
   return out;
 }
@@ -241,7 +243,7 @@ const codeOf = (k) => (k && COURSES[k] ? COURSES[k].code : null);
 const norm = (s) => s.toLowerCase().replace(/\s+/g, " ").trim();
 const keyOf = (t) => createHash("sha1").update(norm(t.title) + "|" + (t.due || "")).digest("hex").slice(0, 12);
 const todoItems = tasks
-  .filter((t) => !t.isExam && t.due && t.status !== "done")
+  .filter((t) => !t.isExam && !t.assignmentId && t.due && t.status !== "done")
   .map((t) => ({ title: t.title, due: t.due, code: codeOf(t.courseKey), courseKey: t.courseKey || null, key: keyOf(t) }));
 mkdirSync(join(OUT_DIR, "data"), { recursive: true });
 writeFileSync(join(OUT_DIR, "data", "tasks.json"), JSON.stringify({ builtAt: builtAt.toISOString(), items: todoItems }, null, 2));
