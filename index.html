@@ -235,6 +235,15 @@
   .cv .cv-prep-lbl.full { color:var(--good); }
   .cv .cv-bar { flex:1; height:5px; border-radius:999px; background:var(--surface-2); overflow:hidden; }
   .cv .cv-bar > i { display:block; height:100%; background:var(--cc); border-radius:999px; }
+  .cv .cv-top { display:flex; align-items:center; justify-content:space-between; gap:6px; }
+  .cv .cv-actions { display:flex; align-items:center; gap:6px; flex:none; }
+  .cv .cv-add { font:inherit; font-size:10.5px; font-weight:700; color:var(--accent); background:var(--accent-soft);
+    border:1px solid color-mix(in srgb,var(--accent) 25%,var(--line)); border-radius:6px; padding:2px 8px; cursor:pointer; white-space:nowrap; }
+  .cv .cv-add:hover { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .cv .cv-add.on { color:var(--good); background:var(--good-soft); border-color:color-mix(in srgb,var(--good) 25%,var(--line)); }
+  .cv .cv-add.on:hover { background:var(--good); color:#fff; border-color:var(--good); }
+  .cv a.cv-link { color:var(--muted); text-decoration:none; font-size:14px; line-height:1; }
+  .cv a.cv-link:hover { color:var(--accent); }
   .link-list { display:flex; flex-direction:column; gap:6px; max-height:52vh; overflow-y:auto; }
   .link-item { display:flex; align-items:center; gap:9px; width:100%; text-align:left; font:inherit; cursor:pointer;
     border:1px solid var(--line); background:var(--surface); border-radius:var(--radius-sm); padding:9px 11px; color:var(--ink); }
@@ -508,16 +517,26 @@
       var ps=prepStats(c.id);
       var pct=ps.total?Math.round(ps.done/ps.total*100):0;
       var prep = ps.total ? '<div class="cv-prep"><span class="cv-prep-lbl'+(ps.done===ps.total?' full':'')+'">prep '+ps.done+'/'+ps.total+'</span><span class="cv-bar"><i style="width:'+pct+'%"></i></span></div>' : '';
-      var open = c.url ? '<a class="cv" href="'+esc(c.url)+'" target="_blank" rel="noopener" style="--cc:'+hue+'">' : '<div class="cv" style="--cc:'+hue+'">';
-      var close = c.url ? '</a>' : '</div>';
-      return open
-        +'<div class="cv-top"><span class="cv-course">'+esc(c.code||"")+'</span>'+(c.url?'<span class="cv-link">↗</span>':'')+'</div>'
+      var onBoard = ps.total>0;
+      var actions = '<span class="cv-actions">'
+        + '<button class="cv-add'+(onBoard?' on':'')+'" data-aid="'+esc(c.id)+'" title="'+(onBoard?'On your board — add another prep task':'Add to board')+'">'+(onBoard?'on board':'+ board')+'</button>'
+        + (c.url?'<a class="cv-link" href="'+esc(c.url)+'" target="_blank" rel="noopener" title="Open in Canvas">↗</a>':'')
+        + '</span>';
+      return '<div class="cv" style="--cc:'+hue+'">'
+        +'<div class="cv-top"><span class="cv-course">'+esc(c.code||"")+'</span>'+actions+'</div>'
         +'<div class="cv-name">'+esc(c.title)+'</div>'
         +(c.desc?'<div class="cv-desc">'+esc(c.desc)+'</div>':'')
         + prep
         +'<div class="cv-due '+cls+'">'+esc(date)+' · '+esc(lbl)+'</div>'
-        +close;
+        +'</div>';
     }).join("");
+    host.querySelectorAll(".cv-add").forEach(function(b){ b.addEventListener("click",function(e){ e.preventDefault(); e.stopPropagation(); addFromAssignment(b.getAttribute("data-aid")); }); });
+  }
+  function addFromAssignment(aid){
+    var c=canvasById(aid); if(!c){ toast("Assignment not found",true); return; }
+    var dup = tasks.some(function(t){ return t.assignmentId===String(aid) && t.title.toLowerCase()===c.title.toLowerCase(); });
+    if(dup){ toast("Already on your board"); return; }
+    addTask(c.title, c.courseKey, c.due, aid);
   }
   function fetchCanvas(){
     fetch("data/canvas.json",{cache:"no-store"}).then(function(r){ return r.ok?r.json():null; })
@@ -677,9 +696,9 @@
     el("linkDlg").showModal();
   }
 
-  function addTask(text, classKey, due){
+  function addTask(text, classKey, due, assignmentId){
     if(busy) return; busy=true; setSync("loading","Saving…");
-    var line="- [ ] "+text.trim()+(due?" \uD83D\uDCC5 "+due:"")+(classKey?" #"+classKey:"");
+    var line="- [ ] "+text.trim()+(due?" \uD83D\uDCC5 "+due:"")+(classKey?" #"+classKey:"")+(assignmentId?" #cid"+assignmentId:"");
     getFile(CFG.inbox).then(function(f){
       var content, sha=null;
       if(f){ content=b64decode(f.content); sha=f.sha; if(content && !/\n$/.test(content))content+="\n"; content+=line+"\n"; }
