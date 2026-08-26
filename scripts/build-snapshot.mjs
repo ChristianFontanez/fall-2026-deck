@@ -8,6 +8,7 @@
 
 import { readFileSync, readdirSync, statSync, writeFileSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
+import { createHash } from "node:crypto";
 
 const VAULT_DIR = process.env.VAULT_DIR || "vault";
 const OUT_DIR = process.env.OUT_DIR || ".";
@@ -235,5 +236,15 @@ let canvas = [];
 try { const cj = JSON.parse(readFileSync(join(OUT_DIR, "data", "canvas.json"), "utf8")); canvas = cj.items || []; } catch { canvas = []; }
 const builtAt = new Date();
 
+// data/tasks.json — open to-dos with due dates, for the cloud calendar mirror (excludes exams & done)
+const codeOf = (k) => (k && COURSES[k] ? COURSES[k].code : null);
+const norm = (s) => s.toLowerCase().replace(/\s+/g, " ").trim();
+const keyOf = (t) => createHash("sha1").update(norm(t.title) + "|" + (t.due || "")).digest("hex").slice(0, 12);
+const todoItems = tasks
+  .filter((t) => !t.isExam && t.due && t.status !== "done")
+  .map((t) => ({ title: t.title, due: t.due, code: codeOf(t.courseKey), courseKey: t.courseKey || null, key: keyOf(t) }));
+mkdirSync(join(OUT_DIR, "data"), { recursive: true });
+writeFileSync(join(OUT_DIR, "data", "tasks.json"), JSON.stringify({ builtAt: builtAt.toISOString(), items: todoItems }, null, 2));
+
 writeFileSync(join(OUT_DIR, "snapshot.html"), render(tasks, canvas, builtAt));
-console.log(`Snapshot built: ${tasks.length} tasks from ${files.length} notes, ${canvas.length} Canvas items.`);
+console.log(`Snapshot built: ${tasks.length} tasks from ${files.length} notes, ${canvas.length} Canvas items, ${todoItems.length} open to-dos → tasks.json.`);
