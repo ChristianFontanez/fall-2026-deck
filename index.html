@@ -379,6 +379,9 @@
   var RAIL_ORDER = ["cms450","cms270","mat219"];
   var token = null, tasks = [], files = {}, lastSync = 0, busy = false;
   var canvasItems = [];
+  var fileCache = {};             // path -> {text, sha}, kept fresh so writes need no re-download
+  var writeChain = Promise.resolve();
+  var pendingWrites = 0;
   var filters = { cls:"all", hideDone:false, weekOnly:false };
   try { var _f = lsGet("ghdeck.filters"); if(_f) filters = Object.assign(filters, JSON.parse(_f)); } catch(e){}
   function saveFilters(){ lsSet("ghdeck.filters", JSON.stringify(filters)); }
@@ -627,22 +630,45 @@
     return out;
   }
 
+  // Serialize all writes so shas never race; UI already updated optimistically.
+  function queueWrite(fn){
+    pendingWrites++; setSync("loading","Saving…");
+    var done=function(){ pendingWrites=Math.max(0,pendingWrites-1); if(pendingWrites===0){ lastSync=Date.now(); setSync("live","Live"); } };
+    writeChain = writeChain.then(fn, fn).then(done, done);
+    return writeChain;
+  }
+  // Edit one existing task's line in its file, using the local cache (no re-download). onFail reverts the optimistic change.
+  function commitLineEdit(t, mutate, msg, onFail){
+    return queueWrite(function(){
+      var apply=function(text, sha, canRetry){
+        var lines=text.split("\n"); var idx=pickLine(lines, t);
+        if(idx<0){ if(onFail)onFail(); toast("That task changed in the note — refreshing",true); load(true); return; }
+        var nl=mutate(lines[idx]); if(nl==null) return;
+        lines[idx]=nl; var nt=lines.join("\n");
+        return putFile(t.path, nt, sha, msg).then(function(res){
+          fileCache[t.path]={ text:nt, sha:(res&&res.content&&res.content.sha)||null }; t.raw=nl;
+        }).catch(function(e){
+          if(e&&e.code==="conflict"&&canRetry){ return getFile(t.path).then(function(f){ if(!f)throw e; return apply(b64decode(f.content), f.sha, false); }); }
+          throw e;
+        });
+      };
+      var c=fileCache[t.path];
+      var start = c ? apply(c.text, c.sha, true)
+        : getFile(t.path).then(function(f){ if(!f)throw{code:"notfound",msg:"File gone"}; return apply(b64decode(f.content), f.sha, false); });
+      return Promise.resolve(start).catch(function(e){
+        if(onFail)onFail(); setSync("err","Error"); toast((e&&e.msg)||"Save failed",true);
+        if(e&&e.code==="conflict") load(true);
+      });
+    });
+  }
+
   function setStatus(uid, newStatus){
-    if(busy) return; var t=findTask(uid); if(!t||t.status===newStatus) return;
-    busy=true; var cardEl=document.querySelector('.card[data-uid="'+cssEsc(uid)+'"]'); if(cardEl)cardEl.classList.add("saving");
-    setSync("loading","Saving…");
-    getFile(t.path).then(function(f){
-      if(!f) throw {code:"notfound",msg:"File vanished: "+t.path};
-      var content=b64decode(f.content), lines=content.split("\n");
-      var idx = pickLine(lines, t);
-      if(idx<0) throw {code:"moved",msg:"Couldn’t find that task line (was it edited?). Refreshing."};
-      lines[idx]=applyStatusToLine(lines[idx], newStatus);
-      return putFile(t.path, lines.join("\n"), f.sha, "deck: "+t.title.slice(0,50)+" → "+newStatus);
-    }).then(function(){ t.status=newStatus; t.statusChar=colChar(newStatus); busy=false; toast("Saved to vault"); lastSync=Date.now(); setSync("live","Live"); load(true); })
-    .catch(function(e){ busy=false; if(cardEl)cardEl.classList.remove("saving");
-      if(e&&e.code==="conflict"){ toast("File changed — refreshing",true); load(true); }
-      else if(e&&e.code==="moved"){ toast(e.msg,true); load(true); }
-      else { setSync("err","Error"); toast((e&&e.msg)||"Save failed",true); } });
+    var t=findTask(uid); if(!t||t.status===newStatus) return;
+    var prev=t.status, prevChar=t.statusChar;
+    t.status=newStatus; t.statusChar=colChar(newStatus); render();   // instant
+    commitLineEdit(t, function(line){ return applyStatusToLine(line, newStatus); },
+      "deck: "+t.title.slice(0,50)+" → "+newStatus,
+      function(){ t.status=prev; t.statusChar=prevChar; render(); });
   }
   function pickLine(lines, t){
     // prefer exact raw match, else same normalized title on a task line near original index
@@ -658,24 +684,30 @@
   function deleteTask(uid){
     var t=findTask(uid); if(!t) return;
     if(!confirm('Delete this task?\n\n"'+t.title+'"\n\nThis removes the line from '+t.file+' and commits it.')) return;
-    if(busy) return; busy=true; setSync("loading","Saving…");
-    getFile(t.path).then(function(f){ if(!f)throw{code:"notfound",msg:"File gone"}; var lines=b64decode(f.content).split("\n");
-      var idx=pickLine(lines,t); if(idx<0)throw{code:"moved",msg:"Task line not found — refreshing"};
-      lines.splice(idx,1); return putFile(t.path, lines.join("\n"), f.sha, "deck: delete "+t.title.slice(0,50)); })
-    .then(function(){ busy=false; toast("Deleted"); load(true); })
-    .catch(function(e){ busy=false; toast((e&&e.msg)||"Delete failed",true); if(e&&(e.code==="conflict"||e.code==="moved"))load(true); else setSync("err","Error"); });
+    var ix=tasks.indexOf(t); if(ix>=0) tasks.splice(ix,1); render();   // instant
+    queueWrite(function(){
+      var apply=function(text, sha, canRetry){
+        var lines=text.split("\n"); var li=pickLine(lines, t);
+        if(li<0) return;                                   // already gone
+        lines.splice(li,1); var nt=lines.join("\n");
+        return putFile(t.path, nt, sha, "deck: delete "+t.title.slice(0,50)).then(function(res){
+          fileCache[t.path]={ text:nt, sha:(res&&res.content&&res.content.sha)||null };
+        }).catch(function(e){ if(e&&e.code==="conflict"&&canRetry){ return getFile(t.path).then(function(f){ if(!f)throw e; return apply(b64decode(f.content), f.sha, false); }); } throw e; });
+      };
+      var c=fileCache[t.path];
+      var start = c ? apply(c.text, c.sha, true) : getFile(t.path).then(function(f){ if(!f)throw{code:"notfound",msg:"File gone"}; return apply(b64decode(f.content), f.sha, false); });
+      return Promise.resolve(start).then(function(){ toast("Deleted"); }).catch(function(e){
+        if(ix>=0){ tasks.splice(ix,0,t); render(); } setSync("err","Error"); toast((e&&e.msg)||"Delete failed",true); if(e&&e.code==="conflict")load(true); });
+    });
   }
 
   function setAssignment(uid, aid){
-    var t=findTask(uid); if(!t) return; if(busy) return; busy=true; setSync("loading","Saving…");
-    getFile(t.path).then(function(f){ if(!f)throw{code:"notfound",msg:"File gone"}; var lines=b64decode(f.content).split("\n");
-      var idx=pickLine(lines,t); if(idx<0)throw{code:"moved",msg:"Task line not found — refreshing"};
-      var out=lines[idx].replace(/\s*#cid\d+/gi,"");                 // strip any existing link
-      if(aid) out=out.replace(/\s*$/,"")+" #cid"+aid;                // add new link
-      lines[idx]=out;
-      return putFile(t.path, lines.join("\n"), f.sha, aid?("deck: link to assignment "+aid):"deck: unlink assignment"); })
-    .then(function(){ busy=false; toast(aid?"Linked":"Unlinked"); load(true); })
-    .catch(function(e){ busy=false; toast((e&&e.msg)||"Link failed",true); if(e&&(e.code==="conflict"||e.code==="moved"))load(true); else setSync("err","Error"); });
+    var t=findTask(uid); if(!t) return; var prev=t.assignmentId;
+    t.assignmentId = aid || null; render();   // instant
+    commitLineEdit(t, function(line){ var out=line.replace(/\s*#cid\d+/gi,""); if(aid) out=out.replace(/\s*$/,"")+" #cid"+aid; return out; },
+      aid?("deck: link to assignment "+aid):"deck: unlink assignment",
+      function(){ t.assignmentId=prev; render(); });
+    toast(aid?"Linked":"Unlinked");
   }
 
   var linkUid=null;
@@ -697,15 +729,24 @@
   }
 
   function addTask(text, classKey, due, assignmentId){
-    if(busy) return; busy=true; setSync("loading","Saving…");
     var line="- [ ] "+text.trim()+(due?" \uD83D\uDCC5 "+due:"")+(classKey?" #"+classKey:"")+(assignmentId?" #cid"+assignmentId:"");
-    getFile(CFG.inbox).then(function(f){
-      var content, sha=null;
-      if(f){ content=b64decode(f.content); sha=f.sha; if(content && !/\n$/.test(content))content+="\n"; content+=line+"\n"; }
-      else { content="# Inbox — Fall 2026\n\nQuick to-dos added from the Command Deck.\n\n"+line+"\n"; }
-      return putFile(CFG.inbox, content, sha, "deck: add "+text.slice(0,50));
-    }).then(function(){ busy=false; toast("Added to Inbox"); load(true); })
-    .catch(function(e){ busy=false; toast((e&&e.msg)||"Add failed",true); setSync("err","Error"); });
+    var temp=parseFile(CFG.inbox, line)[0];
+    if(temp){ temp.line=-Date.now(); tasks.push(temp); render(); }
+    queueWrite(function(){
+      var apply=function(text0, sha, canRetry){
+        var content = (text0!=null) ? text0 : "# Inbox\n\nQuick to-dos added from the Command Deck.\n";
+        if(content && !/\n$/.test(content)) content+="\n";
+        var nt = content + line + "\n";
+        return putFile(CFG.inbox, nt, sha, "deck: add "+text.slice(0,50)).then(function(res){
+          fileCache[CFG.inbox]={ text:nt, sha:(res&&res.content&&res.content.sha)||null };
+          if(temp){ temp.raw=line; temp.line=nt.split("\n").length-2; }
+        }).catch(function(e){ if(e&&e.code==="conflict"&&canRetry){ return getFile(CFG.inbox).then(function(f){ return apply(f?b64decode(f.content):null, f?f.sha:null, false); }); } throw e; });
+      };
+      var c=fileCache[CFG.inbox];
+      var start = c ? apply(c.text, c.sha, true) : getFile(CFG.inbox).then(function(f){ return apply(f?b64decode(f.content):null, f?f.sha:null, false); });
+      return Promise.resolve(start).then(function(){ toast("Added"); }).catch(function(e){
+        if(temp){ var ix=tasks.indexOf(temp); if(ix>=0){ tasks.splice(ix,1); render(); } } setSync("err","Error"); toast((e&&e.msg)||"Add failed",true); if(e&&e.code==="conflict")load(true); });
+    });
   }
 
   // ---------- interactions ----------
@@ -742,10 +783,10 @@
       .then(function(tree){
         var mdFiles=(tree.tree||[]).filter(function(n){ return n.type==="blob" && n.path.indexOf(CFG.dir+"/")===0 && /\.md$/.test(n.path)
           && CFG.excludeFiles.indexOf(n.path.split("/").pop())===-1; });
-        return Promise.all(mdFiles.map(function(n){ return getFile(n.path).then(function(f){ return f?{path:n.path,text:b64decode(f.content)}:null; }); }));
+        return Promise.all(mdFiles.map(function(n){ return getFile(n.path).then(function(f){ return f?{path:n.path,text:b64decode(f.content),sha:f.sha}:null; }); }));
       })
       .then(function(fileList){
-        tasks=[]; fileList.filter(Boolean).forEach(function(f){ tasks=tasks.concat(parseFile(f.path,f.text)); });
+        tasks=[]; fileCache={}; fileList.filter(Boolean).forEach(function(f){ fileCache[f.path]={text:f.text,sha:f.sha}; tasks=tasks.concat(parseFile(f.path,f.text)); });
         document.body.classList.remove("skeleton"); hideNotice(); lastSync=Date.now(); setSync("live","Live"); render(); fetchCanvas();
       })
       .catch(function(e){
@@ -758,7 +799,7 @@
   }
 
   // ---------- dialogs / buttons ----------
-  el("syncBtn").addEventListener("click",function(){ if(!busy) load(false); });
+  el("syncBtn").addEventListener("click",function(){ if(!pendingWrites) load(false); });
   el("addBtn").addEventListener("click",function(){ el("addDlg").showModal(); setTimeout(function(){el("atText").focus();},50); });
   el("addCancel").addEventListener("click",function(){ el("addDlg").close(); });
   el("addForm").addEventListener("submit",function(e){ var v=el("atText").value.trim(); if(!v){e.preventDefault();return;}
@@ -776,7 +817,7 @@
   (function(){ var t=lsGet(LS_THEME); if(t)document.documentElement.setAttribute("data-theme",t); })();
 
   // periodic auto-refresh (keeps it live if a tab is left open)
-  setInterval(function(){ if(token&&!busy&&document.visibilityState==="visible") load(true); }, 120000);
+  setInterval(function(){ if(token&&!pendingWrites&&document.visibilityState==="visible") load(true); }, 120000);
 
   token=lsGet(LS_TOKEN);
   load(false);
