@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-08-28T03:36:42.043Z",
+  "builtAt": "2026-08-28T15:39:55.894Z",
   "items": [
     {
       "id": "400986",
@@ -125,10 +125,40 @@
       "id": "397151",
       "courseKey": "cms450",
       "code": "CMS 450",
-      "title": "Week 2: Problem Set",
+      "title": "Week 2 Problem Set: Delay, Throughput & Switching",
       "due": "2026-09-06",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/397151",
+      "desc": ""
+    },
+    {
+      "id": "408797",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Annotate an HTTP Exchange",
+      "due": "2026-09-09",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/408797",
+      "desc": ""
+    },
+    {
+      "id": "408798",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Wireshark HTTP Capture",
+      "due": "2026-09-11",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/408798",
+      "desc": ""
+    },
+    {
+      "id": "408799",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Week 3 Problem Set: HTTP Request/Response Analysis",
+      "due": "2026-09-13",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/408799",
       "desc": ""
     },
     {
