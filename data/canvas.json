@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-08-28T15:39:55.894Z",
+  "builtAt": "2026-08-29T00:07:49.429Z",
   "items": [
     {
       "id": "400986",
@@ -60,6 +60,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/395721",
       "desc": "Learning goal:\nGet comfortable opening Wireshark, starting a capture, and recognizing that the \"network\" is actually a stream of readable, identifiable traffic, not a black box.\nMaterials needed:\n* Laptop\n* Wireshark installed (pre-class requirement)"
+    },
+    {
+      "id": "408792",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - Section 2.1.1–2.1.4",
+      "due": "2026-08-31",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/408792",
+      "desc": ""
     },
     {
       "id": "398849",
