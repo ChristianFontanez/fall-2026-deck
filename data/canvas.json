@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-08-30T00:41:41.256Z",
+  "builtAt": "2026-08-30T06:20:28.411Z",
   "items": [
     {
       "id": "400986",
@@ -79,7 +79,7 @@
       "due": "2026-08-31",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/398849",
-      "desc": ""
+      "desc": "Compute processing, queueing, transmission, and propagation delay separately, and recognize which one dominates in different scenarios."
     },
     {
       "id": "406764",
@@ -99,7 +99,7 @@
       "due": "2026-09-02",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/398850",
-      "desc": ""
+      "desc": "Use traceroute to see the actual path traffic takes, and connect hop-by-hop delay jumps to bottleneck links from the pre-class video."
     },
     {
       "id": "398653",
@@ -129,7 +129,7 @@
       "due": "2026-09-06",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/398193",
-      "desc": ""
+      "desc": "ASSIGNMENT ZIP: [assignment1.zip] (https://rollins.instructure.com/courses/25418/files/3449581?wrap=1)\n--------------------\nWhat You're Building\n--------------------\nA small inventory system: a Product class representing one item, and an Inventory class that holds a collection of Products.\nThis is intentionally simple. The point is encapsulation done right, not clever logic.\n------------\nRequirements\n------------\nProduct class\n-------------\n* Private fields: name (String), price (double),…"
     },
     {
       "id": "397151",
@@ -139,7 +139,7 @@
       "due": "2026-09-06",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/397151",
-      "desc": ""
+      "desc": "REMINDER: This problem set is individual, hand-worked calculation and short-answer questions, meant to build the same skills tested on quizzes and exams. No AI on this, complete it yourself: Exam 1 will ask you to work through delay, throughput, and switching calculations by hand with no resources, this problem set is your practice for exactly that.\n--------\nProblems\n--------\n1. Delay breakdown. A 2,000-bit packet is sent over a link with a transmission rate of 500 Kbps. The router's processing…"
     },
     {
       "id": "408797",
