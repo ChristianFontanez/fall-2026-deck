@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-08-31T06:14:25.070Z",
+  "builtAt": "2026-08-31T14:05:10.032Z",
   "items": [
     {
       "id": "400986",
@@ -140,6 +140,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/397151",
       "desc": "REMINDER: This problem set is individual, hand-worked calculation and short-answer questions, meant to build the same skills tested on quizzes and exams. No AI on this, complete it yourself: Exam 1 will ask you to work through delay, throughput, and switching calculations by hand with no resources, this problem set is your practice for exactly that.\n--------\nProblems\n--------\n1. Delay breakdown. A 2,000-bit packet is sent over a link with a transmission rate of 500 Kbps. The router's processing…"
+    },
+    {
+      "id": "410566",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Week 2 Homework: Section 2.1-2.2",
+      "due": "2026-09-08",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/410566",
+      "desc": ""
     },
     {
       "id": "408797",
