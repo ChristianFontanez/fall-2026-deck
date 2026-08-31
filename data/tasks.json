@@ -1,4 +1,54 @@
 {
-  "builtAt": "2026-08-31T14:05:12.723Z",
-  "items": []
+  "builtAt": "2026-08-31T20:11:51.599Z",
+  "items": [
+    {
+      "title": "Read Ch 1.4.1–1.4.3 (delay components)",
+      "due": "2026-08-31",
+      "code": "CMS 450",
+      "courseKey": "cms450",
+      "key": "10f68d9a9a98"
+    },
+    {
+      "title": "Watch: Delay Types",
+      "due": "2026-08-31",
+      "code": "CMS 450",
+      "courseKey": "cms450",
+      "key": "69d8b6c8751d"
+    },
+    {
+      "title": "Read Ch 1.4.2-1.4.4 (packet loss)",
+      "due": "2026-09-02",
+      "code": "CMS 450",
+      "courseKey": "cms450",
+      "key": "0c8d1bf55eb0"
+    },
+    {
+      "title": "Watch: Bottleneck",
+      "due": "2026-09-02",
+      "code": "CMS 450",
+      "courseKey": "cms450",
+      "key": "e2cc55059fd6"
+    },
+    {
+      "title": "Read Ch 1.5.1–1.5.2 (layered architecture, encapsulation)",
+      "due": "2026-09-04",
+      "code": "CMS 450",
+      "courseKey": "cms450",
+      "key": "c872132e7eea"
+    },
+    {
+      "title": "Watch: Why Layers Exist",
+      "due": "2026-09-04",
+      "code": "CMS 450",
+      "courseKey": "cms450",
+      "key": "1c7a0c9a91b4"
+    },
+    {
+      "title": "Install R and RStudio on your laptop",
+      "due": "2026-08-31",
+      "code": "MAT 219",
+      "courseKey": "mat219",
+      "key": "686b18b678a6"
+    }
+  ]
 }

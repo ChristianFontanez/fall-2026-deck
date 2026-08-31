@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-08-31T14:05:10.032Z",
+  "builtAt": "2026-08-31T20:11:48.743Z",
   "items": [
     {
       "id": "400986",
@@ -82,6 +82,16 @@
       "desc": "Compute processing, queueing, transmission, and propagation delay separately, and recognize which one dominates in different scenarios."
     },
     {
+      "id": "410639",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Switching & Delay",
+      "due": "2026-08-31",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/410639",
+      "desc": ""
+    },
+    {
       "id": "406764",
       "courseKey": "mat219",
       "code": "MAT 219",
@@ -89,6 +99,16 @@
       "due": "2026-09-01",
       "allDay": false,
       "url": "https://rollins.instructure.com/courses/25193/assignments/406764",
+      "desc": ""
+    },
+    {
+      "id": "410638",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - Section 2.1.5-2.1.7",
+      "due": "2026-09-02",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/410638",
       "desc": ""
     },
     {
