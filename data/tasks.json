@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-02T10:56:53.847Z",
+  "builtAt": "2026-09-02T15:02:48.868Z",
   "items": [
     {
       "title": "Read Ch 1.4.1–1.4.3 (delay components)",
@@ -23,13 +23,6 @@
       "key": "0c8d1bf55eb0"
     },
     {
-      "title": "Watch: Bottleneck",
-      "due": "2026-09-02",
-      "code": "CMS 450",
-      "courseKey": "cms450",
-      "key": "e2cc55059fd6"
-    },
-    {
       "title": "Read Ch 1.5.1–1.5.2 (layered architecture, encapsulation)",
       "due": "2026-09-04",
       "code": "CMS 450",
@@ -42,13 +35,6 @@
       "code": "CMS 450",
       "courseKey": "cms450",
       "key": "1c7a0c9a91b4"
-    },
-    {
-      "title": "Install R and RStudio on your laptop",
-      "due": "2026-08-31",
-      "code": "MAT 219",
-      "courseKey": "mat219",
-      "key": "686b18b678a6"
     }
   ]
 }
