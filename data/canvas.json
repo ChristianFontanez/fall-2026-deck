@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-02T15:02:46.472Z",
+  "builtAt": "2026-09-02T18:47:35.416Z",
   "items": [
     {
       "id": "400986",
@@ -119,7 +119,7 @@
       "due": "2026-09-02",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/398850",
-      "desc": "Use traceroute to see the actual path traffic takes, and connect hop-by-hop delay jumps to bottleneck links from the pre-class video."
+      "desc": "Use traceroute to see the actual path traffic takes, and connect hop-by-hop delay jumps to bottleneck links from the pre-class video.\n* Pick 3 destinations.\n* Run traceroute to each:\n* Mac/Linux: traceroute example.com\n* Windows: tracert example.com\n* For each destination, record the delay at every hop.\n* Graph hop number (X-axis) vs. delay (Y-axis) for all three destinations, on the same chart if possible.\n* Which destination had the steepest delay increase, and at which hop?"
     },
     {
       "id": "398653",
@@ -129,7 +129,7 @@
       "due": "2026-09-02",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/398653",
-      "desc": ""
+      "desc": "Take the classes we built in class. Right now its fields are public, direct access, no protection. Fix that:\n* Make every field private.\n* Add a getter for each field.\n* Add a setter for at least one field, and make it actually validate, reject a bad value rather than blindly assigning it (e.g. reject a negative quantity, an empty name, whatever makes sense for your class).\n* In a main method (or a scratch test), demonstrate the validation working: call your setter with a bad value, print the…"
     },
     {
       "id": "395719",
