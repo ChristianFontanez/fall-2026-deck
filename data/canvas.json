@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-03T11:42:48.243Z",
+  "builtAt": "2026-09-03T16:04:35.091Z",
   "items": [
     {
       "id": "400986",
@@ -130,6 +130,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/398653",
       "desc": "Take the classes we built in class. Right now its fields are public, direct access, no protection. Fix that:\n* Make every field private.\n* Add a getter for each field.\n* Add a setter for at least one field, and make it actually validate, reject a bad value rather than blindly assigning it (e.g. reject a negative quantity, an empty name, whatever makes sense for your class).\n* In a main method (or a scratch test), demonstrate the validation working: call your setter with a bad value, print the…"
+    },
+    {
+      "id": "411313",
+      "courseKey": "cms270",
+      "code": "CMS 270",
+      "title": "Pop Quiz 9/2",
+      "due": "2026-09-02",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25418/assignments/411313",
+      "desc": ""
     },
     {
       "id": "411300",
