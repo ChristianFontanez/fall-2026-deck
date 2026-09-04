@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-04T03:41:04.353Z",
+  "builtAt": "2026-09-04T08:39:36.813Z",
   "items": [
     {
       "id": "400986",
@@ -159,7 +159,7 @@
       "due": "2026-09-04",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/395719",
-      "desc": ""
+      "desc": "In class we will map real, everyday services onto the network's layers, so \"layering\" stops being an abstract diagram and becomes something students can point at in something they actually use."
     },
     {
       "id": "398193",
