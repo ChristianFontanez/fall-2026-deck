@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-04T12:56:12.359Z",
+  "builtAt": "2026-09-04T16:48:28.319Z",
   "items": [
     {
       "id": "400986",
@@ -152,6 +152,16 @@
       "desc": ""
     },
     {
+      "id": "411462",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Exit ticket",
+      "due": "2026-09-04",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/411462",
+      "desc": ""
+    },
+    {
       "id": "395719",
       "courseKey": "cms450",
       "code": "CMS 450",
@@ -159,7 +169,7 @@
       "due": "2026-09-04",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/395719",
-      "desc": "In class we will map real, everyday services onto the network's layers, so \"layering\" stops being an abstract diagram and becomes something students can point at in something they actually use."
+      "desc": "In class we will map real, everyday services onto the network's layers, so \"layering\" stops being an abstract diagram."
     },
     {
       "id": "398193",
