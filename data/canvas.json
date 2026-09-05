@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-05T03:41:03.306Z",
+  "builtAt": "2026-09-05T08:12:02.202Z",
   "items": [
     {
       "id": "400986",
@@ -209,7 +209,7 @@
       "due": "2026-09-09",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/408797",
-      "desc": ""
+      "desc": "Read a real HTTP request and response, and correctly label what each part is doing."
     },
     {
       "id": "411373",
@@ -229,7 +229,7 @@
       "due": "2026-09-11",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/408798",
-      "desc": ""
+      "desc": "Capture a real, live HTTP session and find cookies, caching headers, and status codes in actual traffic, not sample text."
     },
     {
       "id": "408799",
