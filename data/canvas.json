@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-06T01:05:22.147Z",
+  "builtAt": "2026-09-06T06:02:51.300Z",
   "items": [
     {
       "id": "400986",
@@ -202,6 +202,16 @@
       "desc": ""
     },
     {
+      "id": "411533",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - Probability Foundations",
+      "due": "2026-09-09",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/411533",
+      "desc": ""
+    },
+    {
       "id": "408797",
       "courseKey": "cms450",
       "code": "CMS 450",
@@ -239,7 +249,7 @@
       "due": "2026-09-13",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/408799",
-      "desc": ""
+      "desc": "REMINDER: This problem set is individual, hand-worked calculation and short-answer questions, meant to build the same skills tested on quizzes and exams. No AI on this, complete it yourself: Exam 1 will ask you to annotate and reason about an HTTP exchange from scratch with no resources, this problem set is your practice for exactly that.\n--------\nProblems\n--------\n1. Annotate this exchange. Given the following request/response, identify: the method, the path, the status code and its meaning,…"
     },
     {
       "id": "398672",
