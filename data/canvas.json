@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-08T13:24:55.154Z",
+  "builtAt": "2026-09-08T17:29:17.118Z",
   "items": [
     {
       "id": "400986",
@@ -259,6 +259,16 @@
       "due": "2026-09-16",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/398672",
+      "desc": ""
+    },
+    {
+      "id": "411643",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Week 4 Problem Set: HTTP Request/Response Analysis",
+      "due": "2026-09-20",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/411643",
       "desc": ""
     }
   ]
