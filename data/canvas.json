@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-09T15:16:32.252Z",
+  "builtAt": "2026-09-09T18:42:51.320Z",
   "items": [
     {
       "id": "400986",
@@ -230,6 +230,16 @@
       "allDay": false,
       "url": "https://rollins.instructure.com/courses/25193/assignments/411373",
       "desc": "[Here] (https://rollins.instructure.com/courses/25193/files/3497703?wrap=1) is your first R lab homework.\nYou are welcome to discuss the homework and R code with your classmates, but each student must complete and submit their own work.\nPlease keep the following in mind:\n* Submit your homework as an .Rmd file on Canvas.\n* Compile your R Markdown file before submitting to make sure it runs successfully.\n* Use R commands and techniques that we have learned or used in class. You do not need to use…"
+    },
+    {
+      "id": "411848",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - Probability Day 2: Conditional probability and independence",
+      "due": "2026-09-11",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/411848",
+      "desc": ""
     },
     {
       "id": "408798",
