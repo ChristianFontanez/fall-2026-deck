@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-11T13:22:57.171Z",
+  "builtAt": "2026-09-11T17:12:55.911Z",
   "items": [
     {
       "id": "400986",
@@ -249,7 +249,7 @@
       "due": "2026-09-11",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/408798",
-      "desc": "Capture a real, live HTTP session and find cookies, caching headers, and status codes in actual traffic, not sample text."
+      "desc": "Capture a live HTTP session in Wireshark and find the real request, response, cookies, and caching headers in it, not sample text. Work with your partner.\nSubmit one screenshot of your capture before you leave today."
     },
     {
       "id": "408799",
@@ -262,6 +262,26 @@
       "desc": "REMINDER: This problem set is individual, hand-worked calculation and short-answer questions, meant to build the same skills tested on quizzes and exams. No AI on this, complete it yourself: Exam 1 will ask you to annotate and reason about an HTTP exchange from scratch with no resources, this problem set is your practice for exactly that.\n--------\nProblems\n--------\n1. Annotate this exchange. Given the following request/response, identify: the method, the path, the status code and its meaning,…"
     },
     {
+      "id": "412178",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - Probability Day 3: Probability Trees and Bayes’ Rule",
+      "due": "2026-09-14",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/412178",
+      "desc": ""
+    },
+    {
+      "id": "412237",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Email Protocol Compare Worksheet",
+      "due": "2026-09-14",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/412237",
+      "desc": ""
+    },
+    {
       "id": "412127",
       "courseKey": "mat219",
       "code": "MAT 219",
@@ -272,6 +292,16 @@
       "desc": "[Here] (https://rollins.instructure.com/courses/25193/files/3509681?wrap=1) is the homework problems.\nInstruction\n-----------\n* Grab a piece of blank paper. If you prefer to do it on tablet, it's fine too.\n* Include your name and the following Honor Code in your homework:\nOn my honor, I have not given, nor received, nor witnessed any unauthorized assistance on this work.\n* Show your work. If you write answer only, there is no way for me to figure out whether it's your work, or friends' work, or…"
     },
     {
+      "id": "412238",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Trace a Resolution Path AND DNS Lab",
+      "due": "2026-09-16",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/412238",
+      "desc": ""
+    },
+    {
       "id": "398672",
       "courseKey": "cms270",
       "code": "CMS 270",
@@ -279,6 +309,16 @@
       "due": "2026-09-16",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/398672",
+      "desc": ""
+    },
+    {
+      "id": "412239",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: CDN & Adaptive Streaming",
+      "due": "2026-09-18",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/412239",
       "desc": ""
     },
     {
