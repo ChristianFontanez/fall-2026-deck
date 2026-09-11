@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-10T23:50:45.054Z",
+  "builtAt": "2026-09-11T03:47:29.819Z",
   "items": [
     {
       "id": "400986",
@@ -279,6 +279,16 @@
       "due": "2026-09-16",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/398672",
+      "desc": ""
+    },
+    {
+      "id": "412174",
+      "courseKey": "cms270",
+      "code": "CMS 270",
+      "title": "Assignment 2: Task Tracker",
+      "due": "2026-09-20",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25418/assignments/412174",
       "desc": ""
     },
     {
