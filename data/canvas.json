@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-12T00:36:59.032Z",
+  "builtAt": "2026-09-12T05:03:07.905Z",
   "items": [
     {
       "id": "400986",
@@ -279,7 +279,7 @@
       "due": "2026-09-14",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412237",
-      "desc": ""
+      "desc": "Reason through why sending and reading email use two separate protocol families, and what actually differs between IMAP and HTTP-based webmail in practice."
     },
     {
       "id": "412127",
@@ -299,7 +299,7 @@
       "due": "2026-09-16",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412238",
-      "desc": ""
+      "desc": "Trace the hop-by-hop hierarchy of a DNS lookup by hand, so the root → TLD → authoritative chain from the video becomes concrete.\nTHEN\nRun real DNS lookups from the command line and confirm what's happening by capturing the actual traffic."
     },
     {
       "id": "398672",
@@ -319,7 +319,7 @@
       "due": "2026-09-18",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412239",
-      "desc": ""
+      "desc": "Reason through why video streaming needs CDNs and bitrate adaptation, using concrete scenarios instead of abstract definitions."
     },
     {
       "id": "412174",
