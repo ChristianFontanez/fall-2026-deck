@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-13T01:08:11.912Z",
+  "builtAt": "2026-09-13T06:18:06.105Z",
   "items": [
     {
       "id": "400986",
@@ -329,7 +329,7 @@
       "due": "2026-09-20",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/412174",
-      "desc": ""
+      "desc": "Covers: abstract classes, interfaces, extends vs. implements, polymorphic collections (Weeks 3-4).\n[assignment2.zip] (https://rollins.instructure.com/courses/25418/files/3510644?wrap=1)\n--------------------\nWhat You're Building\n--------------------\nA small task tracker. It has the same \"item + collection\" shape as HW1, with abstraction and an interface layered on top:\n* An abstract Task class holding what every task has in common.\n* Two concrete task types, SimpleTask and DeadlineTask, that…"
     },
     {
       "id": "411643",
@@ -339,7 +339,7 @@
       "due": "2026-09-20",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/411643",
-      "desc": ""
+      "desc": "REMINDER: This problem set is individual, hand-worked calculation and short-answer questions, meant to build the same skills tested on quizzes and exams. No AI on this, complete it yourself: Exam 1 will ask you to trace protocol behavior like DNS resolution from memory with no resources, this problem set is your practice for exactly that.\n--------\nProblems\n--------\n1. Email protocol scenario. A student manages the same email account two ways: through a desktop client like Outlook (configured…"
     }
   ]
 }
