@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-14T19:28:27.892Z",
+  "builtAt": "2026-09-14T22:44:13.609Z",
   "items": [
     {
       "id": "400986",
@@ -239,6 +239,16 @@
       "due": "2026-09-11",
       "allDay": false,
       "url": "https://rollins.instructure.com/courses/25193/assignments/411848",
+      "desc": ""
+    },
+    {
+      "id": "412527",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Quiz 1 - Chapter 1 & 2",
+      "due": "2026-09-11",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/412527",
       "desc": ""
     },
     {
