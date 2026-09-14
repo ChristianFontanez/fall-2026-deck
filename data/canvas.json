@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-14T14:13:47.221Z",
+  "builtAt": "2026-09-14T19:28:27.892Z",
   "items": [
     {
       "id": "400986",
@@ -282,6 +282,16 @@
       "desc": "Reason through why sending and reading email use two separate protocol families, and what actually differs between IMAP and HTTP-based webmail in practice."
     },
     {
+      "id": "412500",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - Probability Day 4: Discrete Random Variables, PMFs, CDFs, and Expectation.",
+      "due": "2026-09-16",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/412500",
+      "desc": ""
+    },
+    {
       "id": "412127",
       "courseKey": "mat219",
       "code": "MAT 219",
@@ -340,6 +350,66 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/411643",
       "desc": "REMINDER: This problem set is individual, hand-worked calculation and short-answer questions, meant to build the same skills tested on quizzes and exams. No AI on this, complete it yourself: Exam 1 will ask you to trace protocol behavior like DNS resolution from memory with no resources, this problem set is your practice for exactly that.\n--------\nProblems\n--------\n1. Email protocol scenario. A student manages the same email account two ways: through a desktop client like Outlook (configured…"
+    },
+    {
+      "id": "412452",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Week 5 Problem Set: Individual UDP Socket Mini-Exercise",
+      "due": "2026-09-27",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/412452",
+      "desc": ""
+    },
+    {
+      "id": "412454",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Term Project: Milestone 1",
+      "due": "2026-10-04",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/412454",
+      "desc": ""
+    },
+    {
+      "id": "412455",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Term Project: Milestone 2",
+      "due": "2026-10-18",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/412455",
+      "desc": ""
+    },
+    {
+      "id": "412456",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Term Project: Milestone 3",
+      "due": "2026-11-11",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/412456",
+      "desc": ""
+    },
+    {
+      "id": "412458",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Term Project: Milestone 4",
+      "due": "2026-11-29",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/412458",
+      "desc": ""
+    },
+    {
+      "id": "412459",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Term Project: Final Submission",
+      "due": "2026-12-04",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/412459",
+      "desc": ""
     }
   ]
 }
