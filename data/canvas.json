@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-16T11:48:03.175Z",
+  "builtAt": "2026-09-16T16:27:59.705Z",
   "items": [
     {
       "id": "400986",
@@ -410,6 +410,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412454",
       "desc": ""
+    },
+    {
+      "id": "412697",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Project Proposal",
+      "due": "2026-10-05",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/412697",
+      "desc": "For this project, you will work in a group of 2–3 students to investigate a question of interest using real-world data. The goal of this first assignment is to decide on a general direction for your project and make sure that you have a workable dataset and a specific question to investigate.\nPlease begin by reviewing the [Possible Project Ideas] (https://rollins.instructure.com/courses/25193/files/3518658?wrap=1) document. The topics listed there are meant as starting points; you may choose…"
     },
     {
       "id": "412455",
