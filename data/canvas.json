@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-16T01:10:32.514Z",
+  "builtAt": "2026-09-16T06:09:07.141Z",
   "items": [
     {
       "id": "400986",
@@ -362,6 +362,36 @@
       "desc": "REMINDER: This problem set is individual, hand-worked calculation and short-answer questions, meant to build the same skills tested on quizzes and exams. No AI on this, complete it yourself: Exam 1 will ask you to trace protocol behavior like DNS resolution from memory with no resources, this problem set is your practice for exactly that.\n--------\nProblems\n--------\n1. Email protocol scenario. A student manages the same email account two ways: through a desktop client like Outlook (configured…"
     },
     {
+      "id": "412658",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Modify Starter Code",
+      "due": "2026-09-21",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/412658",
+      "desc": ""
+    },
+    {
+      "id": "412657",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Demux Scenario Problem Set",
+      "due": "2026-09-23",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/412657",
+      "desc": ""
+    },
+    {
+      "id": "412656",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Pair-Programmed UDP Exercise",
+      "due": "2026-09-25",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/412656",
+      "desc": ""
+    },
+    {
       "id": "412452",
       "courseKey": "cms450",
       "code": "CMS 450",
@@ -389,6 +419,16 @@
       "due": "2026-10-18",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412455",
+      "desc": ""
+    },
+    {
+      "id": "412660",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Week 9 Problem Set: NAT Tracing & IPv4/IPv6 Header Comparison",
+      "due": "2026-10-25",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/412660",
       "desc": ""
     },
     {
