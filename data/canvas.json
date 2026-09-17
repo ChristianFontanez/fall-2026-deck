@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-17T06:11:47.935Z",
+  "builtAt": "2026-09-17T11:51:27.103Z",
   "items": [
     {
       "id": "400986",
@@ -330,6 +330,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/398672",
       "desc": "--------\nThe Work\n--------\n* Define your own interface with at least one method. Don't reuse Drivable, invent one that fits your own running example from class (the one you've been building since Week 1-2), or a new one.\n* It needs at least one method signature, e.g. void drive(double miles);. No body.\n* Implement that interface in two different, otherwise-unrelated classes.\n* \"Otherwise-unrelated\" means: they don't extend the same parent class, and they aren't a subclass of one another. The…"
+    },
+    {
+      "id": "412845",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - Probability Day 5: variance/standard deviation and linear combinations of random variables",
+      "due": "2026-09-18",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/412845",
+      "desc": ""
     },
     {
       "id": "412239",
