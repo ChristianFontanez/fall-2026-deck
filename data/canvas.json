@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-18T15:07:36.276Z",
+  "builtAt": "2026-09-18T18:33:10.460Z",
   "items": [
     {
       "id": "400986",
@@ -349,7 +349,7 @@
       "due": "2026-09-18",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412239",
-      "desc": "Reason through why video streaming needs CDNs and bitrate adaptation, using concrete scenarios instead of abstract definitions."
+      "desc": "For each scenario below, decide with your partner what's actually happening and why.\n* A user in Tokyo streams a video originally uploaded to a server in Virginia, but playback starts almost instantly with no long wait. What's likely actually serving that video, and why isn't it coming straight from Virginia?\n* A user's Wi-Fi signal weakens mid-video. The picture quality visibly drops, but the video doesn't pause or buffer. What mechanism is doing this, and why does quality drop instead of…"
     },
     {
       "id": "412174",
@@ -370,6 +370,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/411643",
       "desc": "REMINDER: This problem set is individual, hand-worked calculation and short-answer questions, meant to build the same skills tested on quizzes and exams. No AI on this, complete it yourself: Exam 1 will ask you to trace protocol behavior like DNS resolution from memory with no resources, this problem set is your practice for exactly that.\n--------\nProblems\n--------\n1. Email protocol scenario. A student manages the same email account two ways: through a desktop client like Outlook (configured…"
+    },
+    {
+      "id": "412980",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - Probability Day 6: Bernoulli, Binomial, and Geometric Distributions",
+      "due": "2026-09-21",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/412980",
+      "desc": ""
     },
     {
       "id": "412658",
