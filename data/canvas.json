@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-20T00:22:30.802Z",
+  "builtAt": "2026-09-20T05:23:42.110Z",
   "items": [
     {
       "id": "400986",
@@ -389,7 +389,7 @@
       "due": "2026-09-21",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412658",
-      "desc": ""
+      "desc": "Get hands-on with the socket module from the pre-class demo, before building anything from scratch."
     },
     {
       "id": "412667",
@@ -409,7 +409,7 @@
       "due": "2026-09-23",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412657",
-      "desc": ""
+      "desc": "Trace exactly how port numbers route incoming data to the correct application, using concrete scenarios."
     },
     {
       "id": "412656",
@@ -419,7 +419,7 @@
       "due": "2026-09-25",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412656",
-      "desc": ""
+      "desc": "Build a minimal UDP client-server exchange from scratch, without starter code this time, directly setting up Milestone 1 of the term project."
     },
     {
       "id": "412452",
@@ -429,7 +429,7 @@
       "due": "2026-09-27",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412452",
-      "desc": ""
+      "desc": "REMINDER: Unlike the other problem sets, this is a coding exercise, the same skill as Milestone 1, so it follows the term project's AI policy instead of the standard problem-set policy: AI use is optional, but if you use it, submit your chat history/transcript along with your code.\n-------\nProblem\n-------\nWorking on your own (not with your Friday in-class partner), write:\n* A UDP server that listens on a port, receives a message, and sends back the message reversed (e.g., \"hello\" → \"olleh\").\n*…"
     },
     {
       "id": "412454",
@@ -439,7 +439,7 @@
       "due": "2026-10-04",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412454",
-      "desc": ""
+      "desc": "Due Sun, Oct 4\nRequirements\n------------\n* A UDP server that listens on a port and receives messages from a client\n* A UDP client that sends a message to the server and receives a reply\n* At minimum, some meaningful request/response exchange between client and server (on the default chat track, an echo is fine; if you're building your own system, this should be a first real interaction for it, e.g., a move submitted to a game server, a sensor reading sent in)\n* Code runs locally (client and…"
     },
     {
       "id": "412697",
