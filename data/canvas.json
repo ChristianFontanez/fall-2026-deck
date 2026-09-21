@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-21T16:52:20.465Z",
+  "builtAt": "2026-09-21T20:52:45.673Z",
   "items": [
     {
       "id": "400986",
@@ -392,14 +392,14 @@
       "desc": "Get hands-on with the socket module from the pre-class demo, before building anything from scratch.\nStarter code:\n* [udp_client.py] (https://rollins.instructure.com/courses/25029/files/3526505?wrap=1)\n* [] (https://rollins.instructure.com/courses/25029/files/3526505?wrap=1)[udp_server.py] (https://rollins.instructure.com/courses/25029/files/3526506?wrap=1)\nWhat to do:\n* Run it as-is. Confirm the echo works.\n* Modify the server so it converts the message to uppercase before echoing it back.\n*…"
     },
     {
-      "id": "412667",
+      "id": "413150",
       "courseKey": "mat219",
       "code": "MAT 219",
-      "title": "Week 4 Homework: Probability Day 4-6",
+      "title": "Readiness Assessment - Probability Day 7: continuous random variables",
       "due": "2026-09-23",
       "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/412667",
-      "desc": "[Here] (https://rollins.instructure.com/courses/25193/files/3518135?wrap=1) is the homework problems.\nInstruction\n-----------\n* Grab a piece of blank paper. If you prefer to do it on tablet, it's fine too.\n* Include your name and the following Honor Code in your homework:\nOn my honor, I have not given, nor received, nor witnessed any unauthorized assistance on this work.\n* Show your work. If you write answer only, there is no way for me to figure out whether it's your work, or friends' work, or…"
+      "url": "https://rollins.instructure.com/courses/25193/assignments/413150",
+      "desc": ""
     },
     {
       "id": "412657",
@@ -410,6 +410,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412657",
       "desc": "Trace exactly how port numbers route incoming data to the correct application, using concrete scenarios."
+    },
+    {
+      "id": "412667",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Week 4 Homework: Probability Day 4-6",
+      "due": "2026-09-25",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/412667",
+      "desc": "[Here] (https://rollins.instructure.com/courses/25193/files/3518135?wrap=1) is the homework problems.\nInstruction\n-----------\n* Grab a piece of blank paper. If you prefer to do it on tablet, it's fine too.\n* Include your name and the following Honor Code in your homework:\nOn my honor, I have not given, nor received, nor witnessed any unauthorized assistance on this work.\n* Show your work. If you write answer only, there is no way for me to figure out whether it's your work, or friends' work, or…"
     },
     {
       "id": "412656",
