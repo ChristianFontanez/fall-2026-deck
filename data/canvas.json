@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-21T10:49:46.155Z",
+  "builtAt": "2026-09-21T16:52:20.465Z",
   "items": [
     {
       "id": "400986",
@@ -389,7 +389,7 @@
       "due": "2026-09-21",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412658",
-      "desc": "Get hands-on with the socket module from the pre-class demo, before building anything from scratch."
+      "desc": "Get hands-on with the socket module from the pre-class demo, before building anything from scratch.\nStarter code:\n* [udp_client.py] (https://rollins.instructure.com/courses/25029/files/3526505?wrap=1)\n* [] (https://rollins.instructure.com/courses/25029/files/3526505?wrap=1)[udp_server.py] (https://rollins.instructure.com/courses/25029/files/3526506?wrap=1)\nWhat to do:\n* Run it as-is. Confirm the echo works.\n* Modify the server so it converts the message to uppercase before echoing it back.\n*…"
     },
     {
       "id": "412667",
@@ -430,6 +430,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412452",
       "desc": "REMINDER: Unlike the other problem sets, this is a coding exercise, the same skill as Milestone 1, so it follows the term project's AI policy instead of the standard problem-set policy: AI use is optional, but if you use it, submit your chat history/transcript along with your code.\n-------\nProblem\n-------\nWorking on your own (not with your Friday in-class partner), write:\n* A UDP server that listens on a port, receives a message, and sends back the message reversed (e.g., \"hello\" → \"olleh\").\n*…"
+    },
+    {
+      "id": "413118",
+      "courseKey": "cms270",
+      "code": "CMS 270",
+      "title": "Assignment 3: Bank Accounts",
+      "due": "2026-10-04",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25418/assignments/413118",
+      "desc": ""
     },
     {
       "id": "412454",
