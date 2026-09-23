@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-23T18:27:02.583Z",
+  "builtAt": "2026-09-23T21:46:16.760Z",
   "items": [
     {
       "id": "400986",
@@ -410,6 +410,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412657",
       "desc": "Trace exactly how port numbers route incoming data to the correct application, using concrete scenarios.\n---------\nScenarios\n---------\nFor each scenario, determine which application on the machine receives the incoming data, and explain why.\nScenario 1: A laptop has a browser tab open (using source port 51230, destination port 443) and a game client open (using source port 51231, destination port 27015). A packet arrives addressed to port 51230. Which application gets it?\nScenario 2: A web…"
+    },
+    {
+      "id": "413377",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - Probability Day 8: Normal distribution",
+      "due": "2026-09-25",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/413377",
+      "desc": ""
     },
     {
       "id": "412667",
