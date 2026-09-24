@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-24T19:17:39.681Z",
+  "builtAt": "2026-09-24T22:32:48.709Z",
   "items": [
     {
       "id": "400986",
@@ -490,6 +490,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25193/assignments/412697",
       "desc": "For this project, you will work in a group of 2–3 students to investigate a question of interest using real-world data. The goal of this first assignment is to decide on a general direction for your project and make sure that you have a workable dataset and a specific question to investigate.\nPlease begin by reviewing the [Possible Project Ideas] (https://rollins.instructure.com/courses/25193/files/3518658?wrap=1) document. The topics listed there are meant as starting points; you may choose…"
+    },
+    {
+      "id": "395724",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Exam 1",
+      "due": "2026-10-09",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/395724",
+      "desc": ""
     },
     {
       "id": "412455",
