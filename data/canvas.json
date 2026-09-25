@@ -1,26 +1,6 @@
 {
-  "builtAt": "2026-09-25T00:48:09.572Z",
+  "builtAt": "2026-09-25T05:58:17.048Z",
   "items": [
-    {
-      "id": "400986",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "First Day Survey",
-      "due": "2026-08-26",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/400986",
-      "desc": "This quiz is a chance for me to get to know you better."
-    },
-    {
-      "id": "400979",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Syllabus Quiz",
-      "due": "2026-08-26",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/400979",
-      "desc": ""
-    },
     {
       "id": "406494",
       "courseKey": "mat219",
