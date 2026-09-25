@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-09-25T11:41:56.837Z",
+  "builtAt": "2026-09-25T16:52:19.991Z",
   "items": [
-    {
-      "id": "406494",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Readiness Assessment: Sections 1.2.2–1.2.5 & 1.3",
-      "due": "2026-08-26",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/406494",
-      "desc": ""
-    },
     {
       "id": "398848",
       "courseKey": "cms450",
@@ -419,7 +409,7 @@
       "due": "2026-09-25",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412656",
-      "desc": "Build a minimal UDP client-server exchange from scratch, without starter code this time, directly setting up Milestone 1 of the term project."
+      "desc": "Build a minimal UDP client-server exchange from scratch, without starter code this time, directly setting up Milestone 1 of the term project.\nWith your partner, using true pair programming (one person types, the other navigates/checks, switch roles halfway):\n* Write a UDP server that listens on a port and, when it receives a message, prints it and sends back an echo of the same message.\n* Write a UDP client that sends a message to that server and prints whatever comes back.\n* Test it: run the…"
     },
     {
       "id": "412452",
