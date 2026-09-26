@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-09-26T01:58:07.398Z",
+  "builtAt": "2026-09-26T07:30:38.500Z",
   "items": [
-    {
-      "id": "398848",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Activity: Statistical Multiplexing Problem Set",
-      "due": "2026-08-26",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/398848",
-      "desc": "Work through (in-class as pairs) the actual tradeoff between circuit switching's guarantees and packet switching's efficiency, with numbers instead of just concepts.\nSubmissions will be done in class."
-    },
     {
       "id": "407908",
       "courseKey": "mat219",
