@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-27T00:41:33.951Z",
+  "builtAt": "2026-09-27T06:24:37.886Z",
   "items": [
     {
       "id": "407908",
@@ -429,7 +429,7 @@
       "due": "2026-10-04",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/413118",
-      "desc": ""
+      "desc": "--------------------\nWhat You're Building\n--------------------\nA small banking system: an Account class holding what every account has in common, two direct subclasses that each customize part of that behavior, a third subclass one level deeper still, and a Bank class that holds a mix of all of them and treats them polymorphically.\nSame shape as HW1 and HW2: an item type (or types) plus a collection that holds them. This time the \"family of item types\" part is the point, not the collection.…"
     },
     {
       "id": "412454",
