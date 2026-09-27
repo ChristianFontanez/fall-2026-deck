@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-27T20:13:18.226Z",
+  "builtAt": "2026-09-27T23:08:01.317Z",
   "items": [
     {
       "title": "Install .NET SDK, Godot 4 (.NET build), Wireshark",
@@ -23,11 +23,11 @@
       "key": "29d728b8f492"
     },
     {
-      "title": "Accept/amend ADR-0001 (topology), 0002 (engine), 0008 (IP)",
+      "title": "M1 readiness: exercises E1–E5 + answer 11 self-check questions, then sign off (repo: docs/learning/M1-readiness.md)",
       "due": "2026-10-01",
       "code": "CMS 450",
       "courseKey": "cms450",
-      "key": "35ca0ce229be"
+      "key": "a6d49fdb6754"
     },
     {
       "title": "Build M1 server + client + serializer tests (spec: docs/milestones/M1-udp.md)",
