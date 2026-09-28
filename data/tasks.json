@@ -1,6 +1,13 @@
 {
-  "builtAt": "2026-09-28T16:59:55.960Z",
+  "builtAt": "2026-09-28T22:30:12.443Z",
   "items": [
+    {
+      "title": "Commit the restructure + import the backlog to GitHub: `python3 scripts/github/bootstrap_issues.py` in the repo",
+      "due": "2026-09-28",
+      "code": "CMS 450",
+      "courseKey": "cms450",
+      "key": "dd204b3b9876"
+    },
     {
       "title": "Install .NET SDK, Godot 4 (.NET build), Wireshark",
       "due": "2026-09-28",
@@ -28,6 +35,20 @@
       "code": "CMS 450",
       "courseKey": "cms450",
       "key": "a6d49fdb6754"
+    },
+    {
+      "title": "Ask Dr. Skiles: is C# OK for CMS 270? Can one codebase count for both classes? Any required OOD artifacts?",
+      "due": "2026-09-30",
+      "code": "CMS 270",
+      "courseKey": "cms270",
+      "key": "a2a066f04b1b"
+    },
+    {
+      "title": "WP0d: review/approve the M1 class design (repo: docs/OOD.md §3)",
+      "due": "2026-10-01",
+      "code": "CMS 270",
+      "courseKey": "cms270",
+      "key": "a5874edc86db"
     },
     {
       "title": "Build M1 server + client + serializer tests (spec: docs/milestones/M1-udp.md)",
