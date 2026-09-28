@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-09-28T01:45:13.134Z",
+  "builtAt": "2026-09-28T08:26:08.897Z",
   "items": [
-    {
-      "id": "395721",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Activity: First Capture",
-      "due": "2026-08-28",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/395721",
-      "desc": "Learning goal:\nGet comfortable opening Wireshark, starting a capture, and recognizing that the \"network\" is actually a stream of readable, identifiable traffic, not a black box.\nMaterials needed:\n* Laptop\n* Wireshark installed (pre-class requirement)"
-    },
     {
       "id": "408792",
       "courseKey": "mat219",
