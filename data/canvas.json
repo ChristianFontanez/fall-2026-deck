@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-28T08:26:08.897Z",
+  "builtAt": "2026-09-28T16:59:53.148Z",
   "items": [
     {
       "id": "408792",
@@ -400,6 +400,16 @@
       "allDay": false,
       "url": "https://rollins.instructure.com/courses/25193/assignments/413209",
       "desc": "[Here] (https://rollins.instructure.com/courses/25193/files/3529001?wrap=1) is the homework problems.\nInstruction\n-----------\n* Grab a piece of blank paper. If you prefer to do it on tablet, it's fine too.\n* Include your name and the following Honor Code in your homework:\nOn my honor, I have not given, nor received, nor witnessed any unauthorized assistance on this work.\n* Show your work. If you write answer only, there is no way for me to figure out whether it's your work, or friends' work, or…"
+    },
+    {
+      "id": "413792",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Trace RDT FSMs: pairs whiteboard rdt2.0–2.2 finite-state machines",
+      "due": "2026-09-28",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/413792",
+      "desc": "With your partner, draw the full sender and receiver state diagrams for rdt2.2 (the NAK-free version using sequence numbers), then trace through the following event sequence, marking which state each side is in after each event:\n* Sender gets data from the application layer, sends packet with sequence number 0.\n* Packet arrives at receiver uncorrupted. Receiver sends ACK for seq 0.\n* ACK is corrupted in transit.\n* The corrupted ACK arrives at the sender. The sender can't trust it, so it resends…"
     },
     {
       "id": "413118",
