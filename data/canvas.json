@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-29T15:30:53.418Z",
+  "builtAt": "2026-09-29T20:12:43.059Z",
   "items": [
     {
       "id": "408792",
@@ -410,6 +410,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/413792",
       "desc": "With your partner, draw the full sender and receiver state diagrams for rdt2.2 (the NAK-free version using sequence numbers), then trace through the following event sequence, marking which state each side is in after each event:\n* Sender gets data from the application layer, sends packet with sequence number 0.\n* Packet arrives at receiver uncorrupted. Receiver sends ACK for seq 0.\n* ACK is corrupted in transit.\n* The corrupted ACK arrives at the sender. The sender can't trust it, so it resends…"
+    },
+    {
+      "id": "414113",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Quiz 2 - Chapter 3-4",
+      "due": "2026-09-28",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/414113",
+      "desc": ""
     },
     {
       "id": "413118",
