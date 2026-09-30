@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-09-30T10:59:51.603Z",
+  "builtAt": "2026-09-30T16:47:41.362Z",
   "items": [
-    {
-      "id": "408792",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Readiness Assessment - Section 2.1.1–2.1.4",
-      "due": "2026-08-31",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/408792",
-      "desc": ""
-    },
     {
       "id": "398849",
       "courseKey": "cms450",
@@ -420,6 +410,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25193/assignments/414113",
       "desc": ""
+    },
+    {
+      "id": "414193",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: GBN vs. SR Trace",
+      "due": "2026-09-30",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/414193",
+      "desc": "Window size = 4. Packets 0 through 7 are being sent. Packet 2 is lost (never arrives). All other packets and ACKs arrive successfully.\nWith your partner, trace what happens under each protocol:\nGo-Back-N:\n* What does the receiver do when packet 3 arrives before packet 2?\n* Once the sender detects packet 2 is lost (timeout), which packets does it have to resend?\nSelective Repeat:\n* What does the receiver do when packet 3 arrives before packet 2?\n* Once the sender detects packet 2 is lost, which…"
     },
     {
       "id": "413118",
