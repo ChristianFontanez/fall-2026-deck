@@ -1,36 +1,6 @@
 {
-  "builtAt": "2026-10-01T00:37:48.173Z",
+  "builtAt": "2026-10-01T06:33:26.390Z",
   "items": [
-    {
-      "id": "398849",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Activity: Delay-Calculation Problem Set",
-      "due": "2026-08-31",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/398849",
-      "desc": "Compute processing, queueing, transmission, and propagation delay separately, and recognize which one dominates in different scenarios."
-    },
-    {
-      "id": "410639",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Switching & Delay",
-      "due": "2026-08-31",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/410639",
-      "desc": ""
-    },
-    {
-      "id": "406764",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Week 1 Homework: Section 1.1-1.4",
-      "due": "2026-09-01",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/406764",
-      "desc": ""
-    },
     {
       "id": "410638",
       "courseKey": "mat219",
@@ -420,6 +390,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/414193",
       "desc": "Window size = 4. Packets 0 through 7 are being sent. Packet 2 is lost (never arrives). All other packets and ACKs arrive successfully.\nWith your partner, trace what happens under each protocol:\nGo-Back-N:\n* What does the receiver do when packet 3 arrives before packet 2?\n* Once the sender detects packet 2 is lost (timeout), which packets does it have to resend?\nSelective Repeat:\n* What does the receiver do when packet 3 arrives before packet 2?\n* Once the sender detects packet 2 is lost, which…"
+    },
+    {
+      "id": "414239",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - Sampling distribution and sample means",
+      "due": "2026-10-02",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/414239",
+      "desc": ""
     },
     {
       "id": "413118",
