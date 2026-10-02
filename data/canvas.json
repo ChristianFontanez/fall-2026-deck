@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-10-02T08:59:43.697Z",
+  "builtAt": "2026-10-02T15:43:17.919Z",
   "items": [
-    {
-      "id": "410638",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Readiness Assessment - Section 2.1.5-2.1.7",
-      "due": "2026-09-02",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/410638",
-      "desc": ""
-    },
     {
       "id": "398850",
       "courseKey": "cms450",
