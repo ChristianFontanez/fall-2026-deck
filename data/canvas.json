@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-04T00:24:01.216Z",
+  "builtAt": "2026-10-04T06:19:59.448Z",
   "items": [
     {
       "id": "411300",
@@ -449,7 +449,7 @@
       "due": "2026-10-18",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412455",
-      "desc": ""
+      "desc": "Due Sun, Oct 18\nRequirements\n------------\n* Convert your M1 system from UDP to TCP\n* Support a connection, not just a single message: client and server should exchange multiple sequential messages over one connection\n* Handle graceful disconnect (client or server can end the conversation cleanly, without crashing the other side)\nWhere AI can help\n-----------------\nUnderstanding the mechanical differences between UDP and TCP sockets in your language of choice, and debugging connection-state…"
     },
     {
       "id": "412660",
