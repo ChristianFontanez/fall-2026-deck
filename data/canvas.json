@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-05T09:13:58.109Z",
+  "builtAt": "2026-10-05T18:34:32.958Z",
   "items": [
     {
       "id": "398193",
@@ -382,6 +382,16 @@
       "desc": ""
     },
     {
+      "id": "414565",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: RTT Estimation",
+      "due": "2026-10-05",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/414565",
+      "desc": "EstimatedRTT = (1 − α) × EstimatedRTT + α × SampleRTT (use α = 0.125)\nDevRTT = (1 − β) × DevRTT + β × |SampleRTT − EstimatedRTT| (use β = 0.25)\n------------\nInstructions\n------------\nStarting values: EstimatedRTT = 100 ms, DevRTT = 20 ms.\nThe following SampleRTT measurements arrive in order: 120 ms, 90 ms, 200 ms, 95 ms.\nWith your partner, compute the updated EstimatedRTT and DevRTT after each sample, one at a time (4 rounds total, each round uses the previous round's output as its starting…"
+    },
+    {
       "id": "412697",
       "courseKey": "mat219",
       "code": "MAT 219",
@@ -390,6 +400,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25193/assignments/412697",
       "desc": "For this project, you will work in a group of 2–3 students to investigate a question of interest using real-world data. The goal of this first assignment is to decide on a general direction for your project and make sure that you have a workable dataset and a specific question to investigate.\nPlease begin by reviewing the [Possible Project Ideas] (https://rollins.instructure.com/courses/25193/files/3518658?wrap=1) document. The topics listed there are meant as starting points; you may choose…"
+    },
+    {
+      "id": "414590",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - CI for one proportion (part 1)",
+      "due": "2026-10-07",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/414590",
+      "desc": ""
     },
     {
       "id": "395724",
