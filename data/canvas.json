@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-10-05T02:07:24.651Z",
+  "builtAt": "2026-10-05T09:13:58.109Z",
   "items": [
-    {
-      "id": "395719",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Activity: Layering Scavenger Hunt",
-      "due": "2026-09-04",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/395719",
-      "desc": "In class we will map real, everyday services onto the network's layers, so \"layering\" stops being an abstract diagram."
-    },
     {
       "id": "398193",
       "courseKey": "cms270",
