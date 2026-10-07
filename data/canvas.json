@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-07T16:38:46.154Z",
+  "builtAt": "2026-10-07T21:36:02.201Z",
   "items": [
     {
       "id": "410566",
@@ -389,6 +389,16 @@
       "due": "2026-10-07",
       "allDay": false,
       "url": "https://rollins.instructure.com/courses/25193/assignments/414590",
+      "desc": ""
+    },
+    {
+      "id": "414710",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - CI for one proportion (part 2)",
+      "due": "2026-10-09",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/414710",
       "desc": ""
     },
     {
