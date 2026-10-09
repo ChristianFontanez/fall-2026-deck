@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-10-09T06:45:29.136Z",
+  "builtAt": "2026-10-09T14:14:08.124Z",
   "items": [
-    {
-      "id": "411533",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Readiness Assessment - Probability Foundations",
-      "due": "2026-09-09",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/411533",
-      "desc": ""
-    },
     {
       "id": "408797",
       "courseKey": "cms450",
