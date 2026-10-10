@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-10-10T02:44:53.517Z",
+  "builtAt": "2026-10-10T09:34:59.979Z",
   "items": [
-    {
-      "id": "408797",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Activity: Annotate an HTTP Exchange",
-      "due": "2026-09-09",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/408797",
-      "desc": "Read a real HTTP request and response, and correctly label what each part is doing."
-    },
     {
       "id": "411373",
       "courseKey": "mat219",
