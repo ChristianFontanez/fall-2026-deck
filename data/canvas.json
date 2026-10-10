@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-10-10T15:33:57.363Z",
+  "builtAt": "2026-10-10T19:30:26.916Z",
   "items": [
-    {
-      "id": "411373",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Homework 1 - Chapter 2: Summarizing Data",
-      "due": "2026-09-10",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/411373",
-      "desc": "[Here] (https://rollins.instructure.com/courses/25193/files/3497703?wrap=1) is your first R lab homework.\nYou are welcome to discuss the homework and R code with your classmates, but each student must complete and submit their own work.\nPlease keep the following in mind:\n* Submit your homework as an .Rmd file on Canvas.\n* Compile your R Markdown file before submitting to make sure it runs successfully.\n* Use R commands and techniques that we have learned or used in class. You do not need to use…"
-    },
     {
       "id": "411848",
       "courseKey": "mat219",
