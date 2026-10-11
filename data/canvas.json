@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-10-11T08:29:31.172Z",
+  "builtAt": "2026-10-11T15:04:03.555Z",
   "items": [
-    {
-      "id": "411848",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Readiness Assessment - Probability Day 2: Conditional probability and independence",
-      "due": "2026-09-11",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/411848",
-      "desc": ""
-    },
     {
       "id": "412527",
       "courseKey": "mat219",
