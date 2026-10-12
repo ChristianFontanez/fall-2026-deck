@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-10-12T02:29:26.304Z",
+  "builtAt": "2026-10-12T09:44:27.497Z",
   "items": [
-    {
-      "id": "408798",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Activity: Wireshark HTTP Capture",
-      "due": "2026-09-11",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/408798",
-      "desc": "Capture a live HTTP session in Wireshark and find the real request, response, cookies, and caching headers in it, not sample text. Work with your partner.\nSubmit one screenshot of your capture before you leave today."
-    },
     {
       "id": "408799",
       "courseKey": "cms450",
