@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-13T17:00:18.527Z",
+  "builtAt": "2026-10-13T21:53:27.555Z",
   "items": [
     {
       "id": "408799",
@@ -370,6 +370,26 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412455",
       "desc": "Due Sun, Oct 18\nRequirements\n------------\n* Convert your M1 system from UDP to TCP\n* Support a connection, not just a single message: client and server should exchange multiple sequential messages over one connection\n* Handle graceful disconnect (client or server can end the conversation cleanly, without crashing the other side)\nWhere AI can help\n-----------------\nUnderstanding the mechanical differences between UDP and TCP sockets in your language of choice, and debugging connection-state…"
+    },
+    {
+      "id": "415151",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Homework 7: CI for one mean",
+      "due": "2026-10-19",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/415151",
+      "desc": "[Here] (https://rollins.instructure.com/courses/25193/files/3562364?wrap=1) is the homework problems.\nInstruction\n-----------\n* Grab a piece of blank paper. If you prefer to do it on tablet, it's fine too.\n* Include your name and the following Honor Code in your homework:\nOn my honor, I have not given, nor received, nor witnessed any unauthorized assistance on this work.\n* Show your work. If you write answer only, there is no way for me to figure out whether it's your work, or friends' work, or…"
+    },
+    {
+      "id": "415163",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Quiz 3 - Sampling Distr, CLT, CI",
+      "due": "2026-10-21",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/415163",
+      "desc": ""
     },
     {
       "id": "412660",
