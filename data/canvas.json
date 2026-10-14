@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-10-14T00:58:14.726Z",
+  "builtAt": "2026-10-14T06:00:59.113Z",
   "items": [
-    {
-      "id": "408799",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Week 3 Problem Set: HTTP Request/Response Analysis",
-      "due": "2026-09-13",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/408799",
-      "desc": "REMINDER: This problem set is individual, hand-worked calculation and short-answer questions, meant to build the same skills tested on quizzes and exams. No AI on this, complete it yourself: Exam 1 will ask you to annotate and reason about an HTTP exchange from scratch with no resources, this problem set is your practice for exactly that.\n--------\nProblems\n--------\n1. Annotate this exchange. Given the following request/response, identify: the method, the path, the status code and its meaning,…"
-    },
     {
       "id": "412178",
       "courseKey": "mat219",
