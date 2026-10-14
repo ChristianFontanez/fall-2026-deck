@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-14T17:20:27.665Z",
+  "builtAt": "2026-10-14T20:57:47.331Z",
   "items": [
     {
       "id": "412237",
@@ -325,7 +325,7 @@
       "id": "415020",
       "courseKey": "mat219",
       "code": "MAT 219",
-      "title": "Readiness Assessment - One sample mean CI (Day 1)",
+      "title": "Readiness Assessment - CI for one sample mean (Day 1)",
       "due": "2026-10-14",
       "allDay": false,
       "url": "https://rollins.instructure.com/courses/25193/assignments/415020",
@@ -350,6 +350,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/415206",
       "desc": "[W08_Label_Router_Diagram_Handout.pdf] (https://rollins.instructure.com/courses/25029/files/3563890?wrap=1)"
+    },
+    {
+      "id": "415232",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - CI for one sample mean (Day 2)",
+      "due": "2026-10-16",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/415232",
+      "desc": ""
     },
     {
       "id": "412455",
