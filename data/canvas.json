@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-10-15T03:53:02.341Z",
+  "builtAt": "2026-10-15T09:00:21.289Z",
   "items": [
-    {
-      "id": "412237",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Activity: Email Protocol Compare Worksheet",
-      "due": "2026-09-14",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/412237",
-      "desc": "Reason through why sending and reading email use two separate protocol families, and what actually differs between IMAP and HTTP-based webmail in practice."
-    },
     {
       "id": "412500",
       "courseKey": "mat219",
