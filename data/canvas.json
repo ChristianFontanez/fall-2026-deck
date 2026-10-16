@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-10-16T09:34:18.416Z",
+  "builtAt": "2026-10-16T14:14:18.382Z",
   "items": [
-    {
-      "id": "412500",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Readiness Assessment - Probability Day 4: Discrete Random Variables, PMFs, CDFs, and Expectation.",
-      "due": "2026-09-16",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/412500",
-      "desc": ""
-    },
     {
       "id": "412127",
       "courseKey": "mat219",
