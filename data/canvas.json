@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-16T18:10:10.123Z",
+  "builtAt": "2026-10-16T21:21:45.529Z",
   "items": [
     {
       "id": "412238",
@@ -360,6 +360,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412455",
       "desc": "Due Sun, Oct 18\nRequirements\n------------\n* Convert your M1 system from UDP to TCP\n* Support a connection, not just a single message: client and server should exchange multiple sequential messages over one connection\n* Handle graceful disconnect (client or server can end the conversation cleanly, without crashing the other side)\nWhere AI can help\n-----------------\nUnderstanding the mechanical differences between UDP and TCP sockets in your language of choice, and debugging connection-state…"
+    },
+    {
+      "id": "415425",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - Hypothesis Testing (Day 1)",
+      "due": "2026-10-19",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/415425",
+      "desc": ""
     },
     {
       "id": "415151",
