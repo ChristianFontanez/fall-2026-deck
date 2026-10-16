@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-10-16T14:14:18.382Z",
+  "builtAt": "2026-10-16T18:10:10.123Z",
   "items": [
-    {
-      "id": "412127",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Week 3 Homework: Probability Day 1-3",
-      "due": "2026-09-16",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/412127",
-      "desc": "[Here] (https://rollins.instructure.com/courses/25193/files/3509681?wrap=1) is the homework problems.\nInstruction\n-----------\n* Grab a piece of blank paper. If you prefer to do it on tablet, it's fine too.\n* Include your name and the following Honor Code in your homework:\nOn my honor, I have not given, nor received, nor witnessed any unauthorized assistance on this work.\n* Show your work. If you write answer only, there is no way for me to figure out whether it's your work, or friends' work, or…"
-    },
     {
       "id": "412238",
       "courseKey": "cms450",
@@ -332,6 +322,16 @@
       "desc": "[W08_Label_Router_Diagram_Handout.pdf] (https://rollins.instructure.com/courses/25029/files/3563890?wrap=1)"
     },
     {
+      "id": "415410",
+      "courseKey": "cms270",
+      "code": "CMS 270",
+      "title": "Midterm",
+      "due": "2026-10-14",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25418/assignments/415410",
+      "desc": ""
+    },
+    {
       "id": "415232",
       "courseKey": "mat219",
       "code": "MAT 219",
@@ -339,6 +339,16 @@
       "due": "2026-10-16",
       "allDay": false,
       "url": "https://rollins.instructure.com/courses/25193/assignments/415232",
+      "desc": ""
+    },
+    {
+      "id": "415414",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Subnetting Problem Set",
+      "due": "2026-10-16",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/415414",
       "desc": ""
     },
     {
@@ -379,7 +389,7 @@
       "due": "2026-10-25",
       "allDay": false,
       "url": "https://rollins.instructure.com/courses/25193/assignments/415250",
-      "desc": "[Here] (https://rollins.instructure.com/courses/25193/files/3565084?wrap=1) is your first R lab homework.\nYou are welcome to discuss the homework and R code with your classmates, but each student must complete and submit their own work.\nPlease keep the following in mind:\n* Submit your homework as an .Rmd file on Canvas.\n* Compile your R Markdown file before submitting to make sure it runs successfully.\n* Use R commands and techniques that we have learned or used in class. You do not need to use…"
+      "desc": "[Here] (https://rollins.instructure.com/courses/25193/files/3565084?wrap=1) is your first R lab homework. Here is the [data set] (https://rollins.instructure.com/courses/25193/files/3568168?wrap=1).\nYou are welcome to discuss the homework and R code with your classmates, but each student must complete and submit their own work.\nPlease keep the following in mind:\n* Submit your homework as an .Rmd file on Canvas.\n* Compile your R Markdown file before submitting to make sure it runs successfully.…"
     },
     {
       "id": "412660",
