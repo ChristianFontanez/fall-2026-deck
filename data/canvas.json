@@ -1,26 +1,6 @@
 {
-  "builtAt": "2026-10-17T03:38:52.934Z",
+  "builtAt": "2026-10-17T08:02:37.525Z",
   "items": [
-    {
-      "id": "412238",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Activity: Trace a Resolution Path AND DNS Lab",
-      "due": "2026-09-16",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/412238",
-      "desc": "Trace the hop-by-hop hierarchy of a DNS lookup by hand, so the root → TLD → authoritative chain from the video becomes concrete.\nTHEN\nRun real DNS lookups from the command line and confirm what's happening by capturing the actual traffic."
-    },
-    {
-      "id": "398672",
-      "courseKey": "cms270",
-      "code": "CMS 270",
-      "title": "Lab 2",
-      "due": "2026-09-16",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25418/assignments/398672",
-      "desc": "--------\nThe Work\n--------\n* Define your own interface with at least one method. Don't reuse Drivable, invent one that fits your own running example from class (the one you've been building since Week 1-2), or a new one.\n* It needs at least one method signature, e.g. void drive(double miles);. No body.\n* Implement that interface in two different, otherwise-unrelated classes.\n* \"Otherwise-unrelated\" means: they don't extend the same parent class, and they aren't a subclass of one another. The…"
-    },
     {
       "id": "412845",
       "courseKey": "mat219",
