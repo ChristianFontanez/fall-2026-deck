@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-10-18T13:50:09.891Z",
+  "builtAt": "2026-10-18T17:09:29.208Z",
   "items": [
-    {
-      "id": "412845",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Readiness Assessment - Probability Day 5: variance/standard deviation and linear combinations of random variables",
-      "due": "2026-09-18",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/412845",
-      "desc": ""
-    },
     {
       "id": "412239",
       "courseKey": "cms450",
