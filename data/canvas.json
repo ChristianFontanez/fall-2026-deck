@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-18T00:49:50.009Z",
+  "builtAt": "2026-10-18T05:32:53.657Z",
   "items": [
     {
       "id": "412845",
@@ -389,6 +389,16 @@
       "due": "2026-10-25",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412660",
+      "desc": "REMINDER: This problem set is individual, hand-worked calculation and short-answer questions, meant to build the same skills tested on quizzes and exams. No AI on this, complete it yourself: Exam 2 will ask you to trace NAT tables and reason about header fields by hand with no resources, this problem set is your practice for exactly that.\n--------\nProblems\n--------\n1. NAT trace. A router with public IP 198.51.100.20 serves two internal devices: 10.0.0.5 and 10.0.0.6. Device 10.0.0.5 opens a…"
+    },
+    {
+      "id": "415474",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Week 10: Problem Set: Dijkstra & Distance-Vector Routing",
+      "due": "2026-11-01",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/415474",
       "desc": ""
     },
     {
@@ -399,7 +409,7 @@
       "due": "2026-11-11",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412456",
-      "desc": ""
+      "desc": "Due Wed, Nov 11 (before Exam 2)\nRequirements\n------------\n* Server must handle multiple clients at the same time, not just sequentially\n* Client and server must run on separate machines (two lab machines, your laptop + a classmate's, or your laptop + a cloud VM, any real network path counts, not just localhost)\n* Demonstrate at least 2 clients connected and interacting with the server simultaneously\nWhere AI can help\n-----------------\nUnderstanding concurrency approaches (threading vs.…"
     },
     {
       "id": "412458",
