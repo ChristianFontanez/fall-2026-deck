@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-10-18T23:59:37.552Z",
+  "builtAt": "2026-10-19T04:28:51.473Z",
   "items": [
-    {
-      "id": "412239",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Activity: CDN & Adaptive Streaming",
-      "due": "2026-09-18",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/412239",
-      "desc": "For each scenario below, decide with your partner what's actually happening and why.\n* A user in Tokyo streams a video originally uploaded to a server in Virginia, but playback starts almost instantly with no long wait. What's likely actually serving that video, and why isn't it coming straight from Virginia?\n* A user's Wi-Fi signal weakens mid-video. The picture quality visibly drops, but the video doesn't pause or buffer. What mechanism is doing this, and why does quality drop instead of…"
-    },
     {
       "id": "412174",
       "courseKey": "cms270",
