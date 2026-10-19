@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-19T10:16:06.572Z",
+  "builtAt": "2026-10-19T17:01:29.456Z",
   "items": [
     {
       "id": "412174",
@@ -342,6 +342,16 @@
       "desc": "[Here] (https://rollins.instructure.com/courses/25193/files/3562364?wrap=1) is the homework problems.\nInstruction\n-----------\n* Grab a piece of blank paper. If you prefer to do it on tablet, it's fine too.\n* Include your name and the following Honor Code in your homework:\nOn my honor, I have not given, nor received, nor witnessed any unauthorized assistance on this work.\n* Show your work. If you write answer only, there is no way for me to figure out whether it's your work, or friends' work, or…"
     },
     {
+      "id": "415521",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Trace a NAT Table",
+      "due": "2026-10-19",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/415521",
+      "desc": "[W09_Trace_NAT_Table_Handout.pdf] (https://rollins.instructure.com/courses/25029/files/3571186?wrap=1)"
+    },
+    {
       "id": "415163",
       "courseKey": "mat219",
       "code": "MAT 219",
@@ -372,6 +382,16 @@
       "desc": "REMINDER: This problem set is individual, hand-worked calculation and short-answer questions, meant to build the same skills tested on quizzes and exams. No AI on this, complete it yourself: Exam 2 will ask you to trace NAT tables and reason about header fields by hand with no resources, this problem set is your practice for exactly that.\n--------\nProblems\n--------\n1. NAT trace. A router with public IP 198.51.100.20 serves two internal devices: 10.0.0.5 and 10.0.0.6. Device 10.0.0.5 opens a…"
     },
     {
+      "id": "415526",
+      "courseKey": "cms270",
+      "code": "CMS 270",
+      "title": "Assignment 4: Concert Box Office",
+      "due": "2026-11-01",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25418/assignments/415526",
+      "desc": ""
+    },
+    {
       "id": "415474",
       "courseKey": "cms450",
       "code": "CMS 450",
@@ -392,6 +412,16 @@
       "desc": "Due Wed, Nov 11 (before Exam 2)\nRequirements\n------------\n* Server must handle multiple clients at the same time, not just sequentially\n* Client and server must run on separate machines (two lab machines, your laptop + a classmate's, or your laptop + a cloud VM, any real network path counts, not just localhost)\n* Demonstrate at least 2 clients connected and interacting with the server simultaneously\nWhere AI can help\n-----------------\nUnderstanding concurrency approaches (threading vs.…"
     },
     {
+      "id": "395725",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Exam 2",
+      "due": "2026-11-13",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/395725",
+      "desc": ""
+    },
+    {
       "id": "412458",
       "courseKey": "cms450",
       "code": "CMS 450",
@@ -410,6 +440,26 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412459",
       "desc": ""
+    },
+    {
+      "id": "415523",
+      "courseKey": "cms270",
+      "code": "CMS 270",
+      "title": "Final",
+      "due": "2026-12-11",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25418/assignments/415523",
+      "desc": ""
+    },
+    {
+      "id": "395726",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Final",
+      "due": "2026-12-11",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/395726",
+      "desc": "The Final is at 11:00 AM on December 11th in our regular classroom."
     }
   ]
 }
