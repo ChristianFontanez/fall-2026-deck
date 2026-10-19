@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-19T17:01:29.456Z",
+  "builtAt": "2026-10-19T21:35:32.626Z",
   "items": [
     {
       "id": "412174",
@@ -350,6 +350,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/415521",
       "desc": "[W09_Trace_NAT_Table_Handout.pdf] (https://rollins.instructure.com/courses/25029/files/3571186?wrap=1)"
+    },
+    {
+      "id": "415564",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - Hypothesis Testing (Day 2) - one proportion",
+      "due": "2026-10-21",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/415564",
+      "desc": ""
     },
     {
       "id": "415163",
