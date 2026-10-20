@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-20T15:11:13.766Z",
+  "builtAt": "2026-10-20T19:22:33.490Z",
   "items": [
     {
       "id": "412174",
@@ -309,6 +309,16 @@
       "due": "2026-10-16",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/415414",
+      "desc": ""
+    },
+    {
+      "id": "415619",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Quiz: Router Architecture & CIDR",
+      "due": "2026-10-16",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/415619",
       "desc": ""
     },
     {
