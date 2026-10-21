@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-21T16:05:22.527Z",
+  "builtAt": "2026-10-21T20:13:51.908Z",
   "items": [
     {
       "id": "412658",
@@ -352,6 +352,36 @@
       "desc": ""
     },
     {
+      "id": "415708",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: IPv6 Scenarios & Tunneling Worksheet",
+      "due": "2026-10-21",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/415708",
+      "desc": "[W09_IPv6_Scenarios_Worksheet_Handout.pdf] (https://rollins.instructure.com/courses/25029/files/3575271?wrap=1)"
+    },
+    {
+      "id": "415726",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - Hypothesis Testing (Day 3) - one proportion",
+      "due": "2026-10-23",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/415726",
+      "desc": ""
+    },
+    {
+      "id": "415709",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Design a Flow Table",
+      "due": "2026-10-23",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/415709",
+      "desc": "Turn a written network policy into a prioritized match-plus-action flow table, including a modify-field action, then verify it by running test packets through it and reading the counters."
+    },
+    {
       "id": "415250",
       "courseKey": "mat219",
       "code": "MAT 219",
@@ -370,6 +400,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412660",
       "desc": "REMINDER: This problem set is individual, hand-worked calculation and short-answer questions, meant to build the same skills tested on quizzes and exams. No AI on this, complete it yourself: Exam 2 will ask you to trace NAT tables and reason about header fields by hand with no resources, this problem set is your practice for exactly that.\n--------\nProblems\n--------\n1. NAT trace. A router with public IP 198.51.100.20 serves two internal devices: 10.0.0.5 and 10.0.0.6. Device 10.0.0.5 opens a…"
+    },
+    {
+      "id": "415729",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Homework 8: Hypothesis testing for one proportion",
+      "due": "2026-10-26",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/415729",
+      "desc": "[Here] (https://rollins.instructure.com/courses/25193/files/3575535?wrap=1) is the homework problems.\nInstruction\n-----------\n* Grab a piece of blank paper. If you prefer to do it on tablet, it's fine too.\n* Include your name and the following Honor Code in your homework:\nOn my honor, I have not given, nor received, nor witnessed any unauthorized assistance on this work.\n* Show your work. If you write answer only, there is no way for me to figure out whether it's your work, or friends' work, or…"
     },
     {
       "id": "415526",
