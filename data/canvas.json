@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-10-21T11:29:02.113Z",
+  "builtAt": "2026-10-21T16:05:22.527Z",
   "items": [
-    {
-      "id": "412980",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Readiness Assessment - Probability Day 6: Bernoulli, Binomial, and Geometric Distributions",
-      "due": "2026-09-21",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/412980",
-      "desc": ""
-    },
     {
       "id": "412658",
       "courseKey": "cms450",
