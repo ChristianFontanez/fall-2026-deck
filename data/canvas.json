@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-10-22T01:50:43.018Z",
+  "builtAt": "2026-10-22T07:18:20.372Z",
   "items": [
-    {
-      "id": "412658",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Activity: Modify Starter Code",
-      "due": "2026-09-21",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/412658",
-      "desc": "Get hands-on with the socket module from the pre-class demo, before building anything from scratch.\nStarter code:\n* [udp_client.py] (https://rollins.instructure.com/courses/25029/files/3526505?wrap=1)\n* [] (https://rollins.instructure.com/courses/25029/files/3526505?wrap=1)[udp_server.py] (https://rollins.instructure.com/courses/25029/files/3526506?wrap=1)\nWhat to do:\n* Run it as-is. Confirm the echo works.\n* Modify the server so it converts the message to uppercase before echoing it back.\n*…"
-    },
     {
       "id": "413150",
       "courseKey": "mat219",
