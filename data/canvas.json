@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-10-23T10:30:01.655Z",
+  "builtAt": "2026-10-23T15:27:07.840Z",
   "items": [
-    {
-      "id": "413150",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Readiness Assessment - Probability Day 7: continuous random variables",
-      "due": "2026-09-23",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/413150",
-      "desc": ""
-    },
     {
       "id": "412657",
       "courseKey": "cms450",
