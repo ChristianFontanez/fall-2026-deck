@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-23T15:27:07.840Z",
+  "builtAt": "2026-10-23T19:31:43.013Z",
   "items": [
     {
       "id": "412657",
@@ -380,6 +380,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412660",
       "desc": "REMINDER: This problem set is individual, hand-worked calculation and short-answer questions, meant to build the same skills tested on quizzes and exams. No AI on this, complete it yourself: Exam 2 will ask you to trace NAT tables and reason about header fields by hand with no resources, this problem set is your practice for exactly that.\n--------\nProblems\n--------\n1. NAT trace. A router with public IP 198.51.100.20 serves two internal devices: 10.0.0.5 and 10.0.0.6. Device 10.0.0.5 opens a…"
+    },
+    {
+      "id": "415921",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - Hypothesis Testing (Day 4)",
+      "due": "2026-10-26",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/415921",
+      "desc": ""
     },
     {
       "id": "415729",
