@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-25T00:23:14.875Z",
+  "builtAt": "2026-10-25T05:17:09.789Z",
   "items": [
     {
       "id": "413377",
@@ -399,7 +399,7 @@
       "due": "2026-11-01",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/415526",
-      "desc": ""
+      "desc": "--------------------\nWhat You're Building\n--------------------\nA small ticket-selling system for concerts: a Concert that tracks its seats and prices, a BoxOffice that sells tickets for it, and three custom exceptions that say exactly what went wrong when a sale can't happen.\nSame shape as HW1-HW3: an item type (Concert) plus a class that manages it (BoxOffice). What's new is that BoxOffice depends on a PaymentGateway, which stands in for a real bank. A real bank is slow, costs real money, and…"
     },
     {
       "id": "415474",
