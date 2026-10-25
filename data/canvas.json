@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-10-25T09:55:26.220Z",
+  "builtAt": "2026-10-25T14:10:58.911Z",
   "items": [
-    {
-      "id": "413377",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Readiness Assessment - Probability Day 8: Normal distribution",
-      "due": "2026-09-25",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/413377",
-      "desc": ""
-    },
     {
       "id": "412667",
       "courseKey": "mat219",
