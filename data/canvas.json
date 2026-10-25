@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-24T22:18:19.494Z",
+  "builtAt": "2026-10-25T00:23:14.875Z",
   "items": [
     {
       "id": "413377",
@@ -432,6 +432,16 @@
       "desc": ""
     },
     {
+      "id": "412698",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Project Draft",
+      "due": "2026-11-16",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/412698",
+      "desc": "Submit your group’s project draft following the attached [Project Draft Guidelines] (https://rollins.instructure.com/courses/25193/files/3582214?wrap=1). Build on your proposal, incorporate my feedback, and focus on your analysis, interpretation, limitations, and next steps.\nSubmit one set of files per group:\n*\nPDF draft: Approximately 800-1,200 words, excluding graphs, tables, code, and references. List all group members.\n*\nR Markdown file (.rmd): Include your code for data loading,…"
+    },
+    {
       "id": "412458",
       "courseKey": "cms450",
       "code": "CMS 450",
@@ -440,6 +450,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412458",
       "desc": ""
+    },
+    {
+      "id": "412699",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Project Presentation",
+      "due": "2026-12-01",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/412699",
+      "desc": "Our project presentations will take place on December 2 and December 4. Each group will have 10 minutes to present, followed by 5 minutes for questions and discussion. The presentation order will be announced separately.\nPresent your research question, data, statistical methods, key results, and conclusions, including important limitations. Your main analysis and conclusions should be ready by the presentation. Please read the attached [Project Presentation Guidelines]…"
     },
     {
       "id": "412459",
@@ -470,6 +490,16 @@
       "allDay": false,
       "url": "https://rollins.instructure.com/courses/25029/assignments/395726",
       "desc": "The Final is at 11:00 AM on December 11th in our regular classroom."
+    },
+    {
+      "id": "412700",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Final Written Report",
+      "due": "2026-12-14",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/412700",
+      "desc": "Submit the revised and completed version of your project draft, incorporating feedback from your draft and presentation. Your report should connect your research question, data, statistical analysis, and conclusions and be understandable without your earlier submissions.\nPlease read the attached [Final Project Report Guidelines] (https://rollins.instructure.com/courses/25193/files/3582223?wrap=1) for full requirements and grading criteria.\nGroup submission (one set per group):\n*\nPDF report:…"
     }
   ]
 }
