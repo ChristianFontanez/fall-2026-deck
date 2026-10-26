@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-10-26T01:02:48.192Z",
+  "builtAt": "2026-10-26T06:24:24.540Z",
   "items": [
-    {
-      "id": "412656",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Activity: Pair-Programmed UDP Exercise",
-      "due": "2026-09-25",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/412656",
-      "desc": "Build a minimal UDP client-server exchange from scratch, without starter code this time, directly setting up Milestone 1 of the term project.\nWith your partner, using true pair programming (one person types, the other navigates/checks, switch roles halfway):\n* Write a UDP server that listens on a port and, when it receives a message, prints it and sends back an echo of the same message.\n* Write a UDP client that sends a message to that server and prints whatever comes back.\n* Test it: run the…"
-    },
     {
       "id": "412452",
       "courseKey": "cms450",
