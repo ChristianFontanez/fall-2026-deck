@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-26T13:32:43.970Z",
+  "builtAt": "2026-10-26T19:32:57.031Z",
   "items": [
     {
       "id": "412452",
@@ -362,6 +362,26 @@
       "desc": "[Here] (https://rollins.instructure.com/courses/25193/files/3575535?wrap=1) is the homework problems.\nInstruction\n-----------\n* Grab a piece of blank paper. If you prefer to do it on tablet, it's fine too.\n* Include your name and the following Honor Code in your homework:\nOn my honor, I have not given, nor received, nor witnessed any unauthorized assistance on this work.\n* Show your work. If you write answer only, there is no way for me to figure out whether it's your work, or friends' work, or…"
     },
     {
+      "id": "416077",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Dijkstra by Hand",
+      "due": "2026-10-26",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/416077",
+      "desc": ""
+    },
+    {
+      "id": "416087",
+      "courseKey": "cms270",
+      "code": "CMS 270",
+      "title": "Lab 4: Mocking Practice",
+      "due": "2026-10-28",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25418/assignments/416087",
+      "desc": "This is the standalone version of today's lab, written so it stands on its own if you weren't in class for the mocking walkthrough. If you were in class, the requirements are the same as what was announced, this just spells each part out in more detail.\n--------------------\nBackground: Why Mock\n--------------------\nSometimes the class you want to test depends on something you don't want to actually run during a test: a network call, a database, a sensor, anything slow, unpredictable, or outside…"
+    },
+    {
       "id": "415526",
       "courseKey": "cms270",
       "code": "CMS 270",
@@ -369,7 +389,7 @@
       "due": "2026-11-01",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/415526",
-      "desc": "--------------------\nWhat You're Building\n--------------------\nA small ticket-selling system for concerts: a Concert that tracks its seats and prices, a BoxOffice that sells tickets for it, and three custom exceptions that say exactly what went wrong when a sale can't happen.\nSame shape as HW1-HW3: an item type (Concert) plus a class that manages it (BoxOffice). What's new is that BoxOffice depends on a PaymentGateway, which stands in for a real bank. A real bank is slow, costs real money, and…"
+      "desc": "[assignment4.zip] (https://rollins.instructure.com/courses/25418/files/3584936?wrap=1)\n--------------------\nWhat You're Building\n--------------------\nA small ticket-selling system for concerts: a Concert that tracks its seats and prices, a BoxOffice that sells tickets for it, and three custom exceptions that say exactly what went wrong when a sale can't happen.\nSame shape as HW1-HW3: an item type (Concert) plus a class that manages it (BoxOffice). What's new is that BoxOffice depends on a…"
     },
     {
       "id": "415474",
@@ -380,6 +400,36 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/415474",
       "desc": "REMINDER: This problem set is individual, hand-worked calculation and short-answer questions, meant to build the same skills tested on quizzes and exams. No AI on this, complete it yourself: Exam 2 will ask you to run Dijkstra and distance-vector updates by hand with no resources, this problem set is your practice for exactly that.\n--------\nProblems\n--------\n* Dijkstra, individually. Given this topology, run Dijkstra's algorithm starting from node X to find shortest path costs to every other…"
+    },
+    {
+      "id": "416088",
+      "courseKey": "cms270",
+      "code": "CMS 270",
+      "title": "Lab 5: Project Pitch",
+      "due": "2026-11-04",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25418/assignments/416088",
+      "desc": ""
+    },
+    {
+      "id": "416091",
+      "courseKey": "cms270",
+      "code": "CMS 270",
+      "title": "Milestone 1: Topic & Class Design",
+      "due": "2026-11-08",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25418/assignments/416091",
+      "desc": ""
+    },
+    {
+      "id": "416089",
+      "courseKey": "cms270",
+      "code": "CMS 270",
+      "title": "Lab 6: GUI Wiring Practice",
+      "due": "2026-11-11",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25418/assignments/416089",
+      "desc": ""
     },
     {
       "id": "412456",
@@ -402,6 +452,16 @@
       "desc": ""
     },
     {
+      "id": "416092",
+      "courseKey": "cms270",
+      "code": "CMS 270",
+      "title": "Milestone 2: GUI Integration",
+      "due": "2026-11-15",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25418/assignments/416092",
+      "desc": ""
+    },
+    {
       "id": "412698",
       "courseKey": "mat219",
       "code": "MAT 219",
@@ -410,6 +470,26 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25193/assignments/412698",
       "desc": "Submit your group’s project draft following the attached [Project Draft Guidelines] (https://rollins.instructure.com/courses/25193/files/3582214?wrap=1). Build on your proposal, incorporate my feedback, and focus on your analysis, interpretation, limitations, and next steps.\nSubmit one set of files per group:\n*\nPDF draft: Approximately 800-1,200 words, excluding graphs, tables, code, and references. List all group members.\n*\nR Markdown file (.rmd): Include your code for data loading,…"
+    },
+    {
+      "id": "416090",
+      "courseKey": "cms270",
+      "code": "CMS 270",
+      "title": "Lab 7: Pattern Application Sketch",
+      "due": "2026-11-18",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25418/assignments/416090",
+      "desc": ""
+    },
+    {
+      "id": "416094",
+      "courseKey": "cms270",
+      "code": "CMS 270",
+      "title": "Milestone 3: Design Pattern Applied",
+      "due": "2026-11-22",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25418/assignments/416094",
+      "desc": ""
     },
     {
       "id": "412458",
@@ -430,6 +510,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25193/assignments/412699",
       "desc": "Our project presentations will take place on December 2 and December 4. Each group will have 10 minutes to present, followed by 5 minutes for questions and discussion. The presentation order will be announced separately.\nPresent your research question, data, statistical methods, key results, and conclusions, including important limitations. Your main analysis and conclusions should be ready by the presentation. Please read the attached [Project Presentation Guidelines]…"
+    },
+    {
+      "id": "416095",
+      "courseKey": "cms270",
+      "code": "CMS 270",
+      "title": "Final Submission & Demo",
+      "due": "2026-12-02",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25418/assignments/416095",
+      "desc": ""
     },
     {
       "id": "412459",
