@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-28T08:58:12.834Z",
+  "builtAt": "2026-10-28T15:54:53.553Z",
   "items": [
     {
       "id": "413209",
@@ -370,6 +370,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/416087",
       "desc": "This is the standalone version of today's lab, written so it stands on its own if you weren't in class for the mocking walkthrough. If you were in class, the requirements are the same as what was announced, this just spells each part out in more detail.\n--------------------\nBackground: Why Mock\n--------------------\nSometimes the class you want to test depends on something you don't want to actually run during a test: a network call, a database, a sensor, anything slow, unpredictable, or outside…"
+    },
+    {
+      "id": "416218",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Trace DV Convergence",
+      "due": "2026-10-28",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/416218",
+      "desc": "[W10_Trace_DV_Convergence_Handout.pdf] (https://rollins.instructure.com/courses/25029/files/3588853?wrap=1)"
     },
     {
       "id": "415526",
