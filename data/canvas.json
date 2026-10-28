@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-10-28T02:22:59.719Z",
+  "builtAt": "2026-10-28T08:58:12.834Z",
   "items": [
-    {
-      "id": "412452",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Week 5 Problem Set: Individual UDP Socket Mini-Exercise",
-      "due": "2026-09-27",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/412452",
-      "desc": "REMINDER: Unlike the other problem sets, this is a coding exercise, the same skill as Milestone 1, so it follows the term project's AI policy instead of the standard problem-set policy: AI use is optional, but if you use it, submit your chat history/transcript along with your code.\n-------\nProblem\n-------\nWorking on your own (not with your Friday in-class partner), write:\n* A UDP server that listens on a port, receives a message, and sends back the message reversed (e.g., \"hello\" → \"olleh\").\n*…"
-    },
     {
       "id": "413209",
       "courseKey": "mat219",
