@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-10-28T15:54:53.553Z",
+  "builtAt": "2026-10-28T20:51:51.346Z",
   "items": [
-    {
-      "id": "413209",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Week 5 Homework: Probability Day 7-8",
-      "due": "2026-09-28",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/413209",
-      "desc": "[Here] (https://rollins.instructure.com/courses/25193/files/3529001?wrap=1) is the homework problems.\nInstruction\n-----------\n* Grab a piece of blank paper. If you prefer to do it on tablet, it's fine too.\n* Include your name and the following Honor Code in your homework:\nOn my honor, I have not given, nor received, nor witnessed any unauthorized assistance on this work.\n* Show your work. If you write answer only, there is no way for me to figure out whether it's your work, or friends' work, or…"
-    },
     {
       "id": "413792",
       "courseKey": "cms450",
@@ -400,6 +390,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/415474",
       "desc": "REMINDER: This problem set is individual, hand-worked calculation and short-answer questions, meant to build the same skills tested on quizzes and exams. No AI on this, complete it yourself: Exam 2 will ask you to run Dijkstra and distance-vector updates by hand with no resources, this problem set is your practice for exactly that.\n--------\nProblems\n--------\n* Dijkstra, individually. Given this topology, run Dijkstra's algorithm starting from node X to find shortest path costs to every other…"
+    },
+    {
+      "id": "416220",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Homework 9: Hypothesis testing for one mean, errors, power",
+      "due": "2026-11-04",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/416220",
+      "desc": "[Here] (https://rollins.instructure.com/courses/25193/files/3589298?wrap=1) is the homework problems.\nInstruction\n-----------\n* Grab a piece of blank paper. If you prefer to do it on tablet, it's fine too.\n* Include your name and the following Honor Code in your homework:\nOn my honor, I have not given, nor received, nor witnessed any unauthorized assistance on this work.\n* Show your work. If you write answer only, there is no way for me to figure out whether it's your work, or friends' work, or…"
     },
     {
       "id": "416088",
