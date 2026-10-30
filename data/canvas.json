@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-30T16:35:06.984Z",
+  "builtAt": "2026-10-30T21:01:51.859Z",
   "items": [
     {
       "id": "414193",
@@ -390,6 +390,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/415474",
       "desc": "REMINDER: This problem set is individual, hand-worked calculation and short-answer questions, meant to build the same skills tested on quizzes and exams. No AI on this, complete it yourself: Exam 2 will ask you to run Dijkstra and distance-vector updates by hand with no resources, this problem set is your practice for exactly that.\n--------\nProblems\n--------\n* Dijkstra, individually. Given this topology, run Dijkstra's algorithm starting from node X to find shortest path costs to every other…"
+    },
+    {
+      "id": "416465",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - Two sample hypothesis testing (Day 1) - Proportion",
+      "due": "2026-11-02",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/416465",
+      "desc": ""
     },
     {
       "id": "416220",
