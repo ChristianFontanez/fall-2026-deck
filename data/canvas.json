@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-30T09:50:15.751Z",
+  "builtAt": "2026-10-30T16:35:06.984Z",
   "items": [
     {
       "id": "414193",
@@ -350,6 +350,26 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/416218",
       "desc": "[W10_Trace_DV_Convergence_Handout.pdf] (https://rollins.instructure.com/courses/25029/files/3588853?wrap=1)"
+    },
+    {
+      "id": "416428",
+      "courseKey": "cms270",
+      "code": "CMS 270",
+      "title": "Pop Quiz 10/28",
+      "due": "2026-10-28",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25418/assignments/416428",
+      "desc": ""
+    },
+    {
+      "id": "416424",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Design an AS-Level Topology",
+      "due": "2026-10-30",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/416424",
+      "desc": "Worksheet in class"
     },
     {
       "id": "415526",
