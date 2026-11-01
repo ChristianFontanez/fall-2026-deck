@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-01T00:12:43.579Z",
+  "builtAt": "2026-11-01T06:24:33.731Z",
   "items": [
     {
       "id": "414239",
@@ -409,7 +409,7 @@
       "due": "2026-11-04",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/416088",
-      "desc": ""
+      "desc": "This is the standalone version of today's lab, written so it stands on its own if you weren't in class for the project kickoff. If you were in class, the requirements are the same as what was announced, this just spells each part out in more detail.\nThis one is short and low-pressure on purpose. It's the first draft of your thinking, and it feeds straight into Milestone 1, due Sun, Nov 8. Nothing here locks you in. If your idea changes between now and Sunday, that's fine.…"
     },
     {
       "id": "416481",
