@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-11-01T13:46:08.568Z",
+  "builtAt": "2026-11-01T18:47:35.498Z",
   "items": [
-    {
-      "id": "414239",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Readiness Assessment - Sampling distribution and sample means",
-      "due": "2026-10-02",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/414239",
-      "desc": ""
-    },
     {
       "id": "414392",
       "courseKey": "cms450",
