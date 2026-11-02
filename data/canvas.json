@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-02T09:03:28.614Z",
+  "builtAt": "2026-11-02T19:35:48.178Z",
   "items": [
     {
       "id": "413118",
@@ -355,7 +355,7 @@
       "id": "416465",
       "courseKey": "mat219",
       "code": "MAT 219",
-      "title": "Readiness Assessment - Two sample hypothesis testing (Day 1) - Proportion",
+      "title": "Readiness Assessment - Two sample statistical inference (Day 1) - Proportion",
       "due": "2026-11-02",
       "allDay": false,
       "url": "https://rollins.instructure.com/courses/25193/assignments/416465",
@@ -370,6 +370,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/416480",
       "desc": "Worksheet in class"
+    },
+    {
+      "id": "416583",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - Two sample statistical inference (Day 2)",
+      "due": "2026-11-04",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/416583",
+      "desc": ""
     },
     {
       "id": "416220",
@@ -429,7 +439,7 @@
       "due": "2026-11-08",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/416091",
-      "desc": ""
+      "desc": "Due: Sunday, Nov 8, 11:59 PM · 50 points\nCovers: class design, composition, inheritance/interfaces, UML, JUnit, and event-driven programming (Weeks 1-11). This is the first of four project submissions: M1 (design), M2 (GUI), M3 (design pattern), and the Final submission + demo.\n-----------------------------\nThe Project, in One Paragraph\n-----------------------------\nFor the rest of the semester you're building one program of your own choosing: a game, a small tool, a tracker, whatever you're…"
     },
     {
       "id": "416089",
