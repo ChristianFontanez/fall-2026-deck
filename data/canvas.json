@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-11-02T01:49:30.794Z",
+  "builtAt": "2026-11-02T09:03:28.614Z",
   "items": [
-    {
-      "id": "414392",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Acitivity: Capture TCP Handshake",
-      "due": "2026-10-02",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/414392",
-      "desc": "* Close existing browser tabs/connections where possible. Start a Wireshark capture.\n* Open a new browser tab and visit a new website you haven't loaded recently.\n* Stop the capture. Filter for tcp.flags.syn==1 to find handshake packets specifically.\n* Find the three packets that make up the handshake:\n* The initial SYN\n* The SYN-ACK response\n* The final ACK\n* For each of the three packets, note the source, destination, and which TCP flags are set.\n* With your partner: what's the very next…"
-    },
     {
       "id": "413118",
       "courseKey": "cms270",
@@ -410,6 +400,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/416481",
       "desc": "Worksheet in class"
+    },
+    {
+      "id": "416534",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Quiz 4 - Hypothesis testing (one sample)",
+      "due": "2026-11-06",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/416534",
+      "desc": ""
     },
     {
       "id": "416482",
