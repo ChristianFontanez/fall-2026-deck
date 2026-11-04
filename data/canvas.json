@@ -1,36 +1,6 @@
 {
-  "builtAt": "2026-11-04T02:40:58.927Z",
+  "builtAt": "2026-11-04T18:13:50.453Z",
   "items": [
-    {
-      "id": "413118",
-      "courseKey": "cms270",
-      "code": "CMS 270",
-      "title": "Assignment 3: Bank Accounts",
-      "due": "2026-10-04",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25418/assignments/413118",
-      "desc": "Starter Code: [assignment3.zip] (https://rollins.instructure.com/courses/25418/files/3541828?wrap=1)\n--------------------\nWhat You're Building\n--------------------\nA small banking system: an Account class holding what every account has in common, two direct subclasses that each customize part of that behavior, a third subclass one level deeper still, and a Bank class that holds a mix of all of them and treats them polymorphically.\nSame shape as HW1 and HW2: an item type (or types) plus a…"
-    },
-    {
-      "id": "412454",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Term Project: Milestone 1",
-      "due": "2026-10-04",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/412454",
-      "desc": "Due Sun, Oct 4\nRequirements\n------------\n* A UDP server that listens on a port and receives messages from a client\n* A UDP client that sends a message to the server and receives a reply\n* At minimum, some meaningful request/response exchange between client and server (on the default chat track, an echo is fine; if you're building your own system, this should be a first real interaction for it, e.g., a move submitted to a game server, a sensor reading sent in)\n* Code runs locally (client and…"
-    },
-    {
-      "id": "414412",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Readiness Assessment - CLT and sample proportions",
-      "due": "2026-10-05",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/414412",
-      "desc": ""
-    },
     {
       "id": "414565",
       "courseKey": "cms450",
@@ -442,6 +412,16 @@
       "desc": "Due: Sunday, Nov 8, 11:59 PM · 50 points\nCovers: class design, composition, inheritance/interfaces, UML, JUnit, and event-driven programming (Weeks 1-11). This is the first of four project submissions: M1 (design), M2 (GUI), M3 (design pattern), and the Final submission + demo.\n-----------------------------\nThe Project, in One Paragraph\n-----------------------------\nFor the rest of the semester you're building one program of your own choosing: a game, a small tool, a tracker, whatever you're…"
     },
     {
+      "id": "416677",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Homework 10: Two sample inference",
+      "due": "2026-11-09",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/416677",
+      "desc": "[Here] (https://rollins.instructure.com/courses/25193/files/3607341?wrap=1) is the homework problems.\nInstruction\n-----------\n* Grab a piece of blank paper. If you prefer to do it on tablet, it's fine too.\n* Include your name and the following Honor Code in your homework:\nOn my honor, I have not given, nor received, nor witnessed any unauthorized assistance on this work.\n* Show your work. If you write answer only, there is no way for me to figure out whether it's your work, or friends' work, or…"
+    },
+    {
       "id": "416089",
       "courseKey": "cms270",
       "code": "CMS 270",
@@ -479,7 +459,7 @@
       "due": "2026-11-15",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/416092",
-      "desc": ""
+      "desc": "Due: Sunday, Nov 15, 11:59 PM · 50 points\nCovers: GUI basics, components and listeners, and separating GUI from logic (Week 12). Builds directly on your Milestone 1 design and code.\n-------------------\nWhat Milestone 2 Is\n-------------------\nPut a graphical user interface on top of the design you already have, without tangling the two together. The GUI is the last, thinnest layer. Your logic classes from M1 should barely need to change to support it, and your tests should keep passing without…"
     },
     {
       "id": "412698",
@@ -509,7 +489,7 @@
       "due": "2026-11-22",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/416094",
-      "desc": ""
+      "desc": "Due: Sunday, Nov 22, 11:59 PM · 50 points\nCovers: design patterns, Strategy and Observer (Week 13). Builds on your Milestone 2 project.\n-------------------\nWhat Milestone 3 Is\n-------------------\nFind a real problem in your own project that a design pattern solves, and apply the pattern there. The key word is real. A pattern earns its place by fixing something that was awkward without it: an if/else chain that grows every time you add an option, or a method that has to know about every part of…"
     },
     {
       "id": "412458",
@@ -539,7 +519,7 @@
       "due": "2026-12-02",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/416095",
-      "desc": ""
+      "desc": "Demo: Monday, Nov 30, in class (everyone presents that day) Code + write-up due: Wednesday, Dec 2, 11:59 PM · 150 points\nThe finished project: a working system, a short write-up, and a live demo in class. This is where all four requirements come together.\n----------------\nWhat You Turn In\n----------------\nA finished program that meets all four project requirements:\n* A class design with at least one clear use of inheritance or interfaces\n* A functioning graphical user interface\n* At least one…"
     },
     {
       "id": "412459",
