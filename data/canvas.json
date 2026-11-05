@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-05T14:20:29.654Z",
+  "builtAt": "2026-11-05T21:08:24.237Z",
   "items": [
     {
       "id": "414590",
@@ -379,6 +379,16 @@
       "due": "2026-11-06",
       "allDay": false,
       "url": "https://rollins.instructure.com/courses/25193/assignments/416534",
+      "desc": ""
+    },
+    {
+      "id": "416790",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - Mean difference for Paired Data",
+      "due": "2026-11-06",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/416790",
       "desc": ""
     },
     {
