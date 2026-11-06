@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-06T16:14:55.705Z",
+  "builtAt": "2026-11-06T21:36:46.114Z",
   "items": [
     {
       "id": "414710",
@@ -389,7 +389,7 @@
       "due": "2026-11-06",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/416482",
-      "desc": "* Launch a basic Mininet topology (e.g., the default single-switch topology: sudo mn).\n* Use pingall to confirm all hosts can reach each other by default.\n* Use the Mininet CLI to inspect the flow table on the switch (e.g., via dpctl dump-flows or the equivalent for your Mininet version).\n* With your partner, identify: what's the default flow rule the switch is using to forward this traffic? Does it match anything from the flow-table exercise you did in Week 9?\n* If time allows: try adding a…"
+      "desc": "[W11_Guided_Mininet_Exercise_Handout.pdf] (https://rollins.instructure.com/courses/25029/files/3612989?wrap=1)"
     },
     {
       "id": "416091",
@@ -400,6 +400,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/416091",
       "desc": "Due: Sunday, Nov 8, 11:59 PM · 50 points\nCovers: class design, composition, inheritance/interfaces, UML, JUnit, and event-driven programming (Weeks 1-11). This is the first of four project submissions: M1 (design), M2 (GUI), M3 (design pattern), and the Final submission + demo.\n-----------------------------\nThe Project, in One Paragraph\n-----------------------------\nFor the rest of the semester you're building one program of your own choosing: a game, a small tool, a tracker, whatever you're…"
+    },
+    {
+      "id": "416906",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - Power for Two Means",
+      "due": "2026-11-09",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/416906",
+      "desc": ""
     },
     {
       "id": "416677",
