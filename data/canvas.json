@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-11-08T15:51:25.965Z",
+  "builtAt": "2026-11-08T20:17:28.299Z",
   "items": [
-    {
-      "id": "395724",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Exam 1",
-      "due": "2026-10-09",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/395724",
-      "desc": ""
-    },
     {
       "id": "415020",
       "courseKey": "mat219",
