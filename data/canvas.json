@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-11-08T08:45:36.993Z",
+  "builtAt": "2026-11-08T15:51:25.965Z",
   "items": [
-    {
-      "id": "414710",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Readiness Assessment - CI for one proportion (part 2)",
-      "due": "2026-10-09",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/414710",
-      "desc": ""
-    },
     {
       "id": "395724",
       "courseKey": "cms450",
