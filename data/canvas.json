@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-11T15:37:06.336Z",
+  "builtAt": "2026-11-11T22:16:16.838Z",
   "items": [
     {
       "id": "415020",
@@ -415,11 +415,11 @@
       "id": "416089",
       "courseKey": "cms270",
       "code": "CMS 270",
-      "title": "Lab 6: GUI Wiring Practice",
+      "title": "Lab 6: M2 Working Time",
       "due": "2026-11-11",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/416089",
-      "desc": "This is the standalone version of today's lab, written so it stands on its own if you weren't in class for the GUI/logic separation walkthrough. If you were in class, the requirements are the same as what was announced, this just spells each part out in more detail.\nYou'll practice on something other than your project first, so any mistakes here don't cost you project time. Then you'll apply the same approach to your own project for Milestone 2, due Sun, Nov 15.\n--------------------------…"
+      "desc": "Either commit your code on github and provide a link to your repo and add chaotictoejam as a collaborator or upload a zip of the work you did in class."
     },
     {
       "id": "412456",
