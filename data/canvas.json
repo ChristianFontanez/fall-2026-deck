@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-11-13T07:16:42.555Z",
+  "builtAt": "2026-11-13T15:30:36.728Z",
   "items": [
-    {
-      "id": "415020",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Readiness Assessment - CI for one sample mean (Day 1)",
-      "due": "2026-10-14",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/415020",
-      "desc": ""
-    },
     {
       "id": "414298",
       "courseKey": "mat219",
