@@ -1,26 +1,6 @@
 {
-  "builtAt": "2026-11-14T01:46:36.601Z",
+  "builtAt": "2026-11-14T08:45:04.135Z",
   "items": [
-    {
-      "id": "415206",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Activity: Label a Router Diagram",
-      "due": "2026-10-14",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/415206",
-      "desc": "[W08_Label_Router_Diagram_Handout.pdf] (https://rollins.instructure.com/courses/25029/files/3563890?wrap=1)"
-    },
-    {
-      "id": "415410",
-      "courseKey": "cms270",
-      "code": "CMS 270",
-      "title": "Midterm",
-      "due": "2026-10-14",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25418/assignments/415410",
-      "desc": ""
-    },
     {
       "id": "415232",
       "courseKey": "mat219",
