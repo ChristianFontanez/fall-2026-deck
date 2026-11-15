@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-11-15T14:05:50.355Z",
+  "builtAt": "2026-11-15T19:50:34.135Z",
   "items": [
-    {
-      "id": "415232",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Readiness Assessment - CI for one sample mean (Day 2)",
-      "due": "2026-10-16",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/415232",
-      "desc": ""
-    },
     {
       "id": "415414",
       "courseKey": "cms450",
@@ -442,6 +432,16 @@
       "desc": ""
     },
     {
+      "id": "417839",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Compute CRC by Hand",
+      "due": "2026-11-16",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/417839",
+      "desc": "Perform a CRC calculation by hand using binary division, so the concept from the video becomes a mechanical skill, not just an idea."
+    },
+    {
       "id": "412698",
       "courseKey": "mat219",
       "code": "MAT 219",
@@ -480,6 +480,26 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/416094",
       "desc": "Due: Sunday, Nov 22, 11:59 PM · 50 points\nCovers: design patterns, Strategy and Observer (Week 13). Builds on your Milestone 2 project.\n-------------------\nWhat Milestone 3 Is\n-------------------\nFind a real problem in your own project that a design pattern solves, and apply the pattern there. The key word is real. A pattern earns its place by fixing something that was awkward without it: an if/else chain that grows every time you add an option, or a method that has to know about every part of…"
+    },
+    {
+      "id": "417840",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Week 13: Problem Set: CRC Computation & Multiple-Access Protocols",
+      "due": "2026-11-22",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/417840",
+      "desc": "REMINDER: This problem set is individual, hand-worked calculation and short-answer questions, meant to build the same skills tested on quizzes and exams. No AI on this, complete it yourself: the Final will ask you to compute a CRC and reason through multiple-access scenarios by hand with no resources, this problem set is your practice for exactly that.\nProblems\n--------\n1. CRC, individually. Data bits: 110101  |  Generator: 1011\n* Pad the data with the appropriate number of zero bits.\n* Perform…"
+    },
+    {
+      "id": "417841",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Trace MAC Table Build Out",
+      "due": "2026-11-25",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/417841",
+      "desc": ""
     },
     {
       "id": "412458",
