@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-14T23:58:45.684Z",
+  "builtAt": "2026-11-15T06:11:50.281Z",
   "items": [
     {
       "id": "415232",
@@ -432,6 +432,16 @@
       "desc": "Due: Sunday, Nov 15, 11:59 PM · 50 points\nCovers: GUI basics, components and listeners, and separating GUI from logic (Week 12). Builds directly on your Milestone 1 design and code.\n-------------------\nWhat Milestone 2 Is\n-------------------\nPut a graphical user interface on top of the design you already have, without tangling the two together. The GUI is the last, thinnest layer. Your logic classes from M1 should barely need to change to support it, and your tests should keep passing without…"
     },
     {
+      "id": "417835",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - ANOVA",
+      "due": "2026-11-16",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/417835",
+      "desc": ""
+    },
+    {
       "id": "412698",
       "courseKey": "mat219",
       "code": "MAT 219",
@@ -449,7 +459,7 @@
       "due": "2026-11-18",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/416090",
-      "desc": ""
+      "desc": "This is the standalone version of today's lab, written so it stands on its own if you weren't in class for the Observer walkthrough. If you were in class, the requirements are the same as what was announced, this just spells each part out in more detail.\nThis lab is the planning step for Milestone 3, due Sun, Nov 22, where you apply at least one pattern to your project. It's also practice for presentations: when you present, you'll need to explain why your pattern fits, in your own words.…"
     },
     {
       "id": "417243",
@@ -479,7 +489,7 @@
       "due": "2026-11-29",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/412458",
-      "desc": ""
+      "desc": "Due Sun, Nov 29 (end of Thanksgiving Break)\nRequirements\n------------\nChoose one of the following:\n* Peer discovery: clients can discover each other (not just the server) and exchange a message directly, without routing through the server\n* Direct file transfer: one client sends a file directly to another client, peer-to-peer, framed as a minimal FTP-like transfer\n* Your own distributed feature, if you're on a custom track and neither option above fits naturally (e.g., peer-to-peer game state…"
     },
     {
       "id": "412699",
