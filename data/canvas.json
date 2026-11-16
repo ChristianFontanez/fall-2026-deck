@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-16T13:58:54.495Z",
+  "builtAt": "2026-11-16T23:19:03.923Z",
   "items": [
     {
       "id": "412455",
@@ -419,17 +419,17 @@
       "due": "2026-11-16",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/417839",
-      "desc": "Perform a CRC calculation by hand using binary division, so the concept from the video becomes a mechanical skill, not just an idea."
+      "desc": "Perform a CRC calculation by hand using binary division, so the concept from the video becomes a mechanical skill, not just an idea.\n[W13_Compute_CRC_by_Hand_Handout.pdf] (https://rollins.instructure.com/courses/25029/files/3628980?wrap=1)"
     },
     {
-      "id": "412698",
+      "id": "417955",
       "courseKey": "mat219",
       "code": "MAT 219",
-      "title": "Project Draft",
-      "due": "2026-11-16",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/412698",
-      "desc": "Submit your group’s project draft following the attached [Project Draft Guidelines] (https://rollins.instructure.com/courses/25193/files/3582214?wrap=1). Build on your proposal, incorporate my feedback, and focus on your analysis, interpretation, limitations, and next steps.\nSubmit one set of files per group:\n*\nPDF draft: Approximately 800-1,200 words, excluding graphs, tables, code, and references. List all group members.\n*\nR Markdown file (.rmd): Include your code for data loading,…"
+      "title": "Readiness Assessment - Linear Regression",
+      "due": "2026-11-18",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/417955",
+      "desc": ""
     },
     {
       "id": "416090",
@@ -442,6 +442,26 @@
       "desc": "This is the standalone version of today's lab, written so it stands on its own if you weren't in class for the Observer walkthrough. If you were in class, the requirements are the same as what was announced, this just spells each part out in more detail.\nThis lab is the planning step for Milestone 3, due Sun, Nov 22, where you apply at least one pattern to your project. It's also practice for presentations: when you present, you'll need to explain why your pattern fits, in your own words.…"
     },
     {
+      "id": "417934",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Collision Simulation",
+      "due": "2026-11-18",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/417934",
+      "desc": ""
+    },
+    {
+      "id": "412698",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Project Draft",
+      "due": "2026-11-18",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/412698",
+      "desc": "Submit your group’s project draft following the attached [Project Draft Guidelines] (https://rollins.instructure.com/courses/25193/files/3582214?wrap=1). Build on your proposal, incorporate my feedback, and focus on your analysis, interpretation, limitations, and next steps.\nSubmit one set of files per group:\n*\nPDF draft: Approximately 800-1,200 words, excluding graphs, tables, code, and references. List all group members.\n*\nR Markdown file (.rmd): Include your code for data loading,…"
+    },
+    {
       "id": "417243",
       "courseKey": "mat219",
       "code": "MAT 219",
@@ -450,6 +470,16 @@
       "allDay": false,
       "url": "https://rollins.instructure.com/courses/25193/assignments/417243",
       "desc": "Here is the [R HW 3] (https://rollins.instructure.com/courses/25193/files/3617503?wrap=1).\nThis is a guided assignment that introduces R functions we have not used in class. Read the explanations, run the provided code, and complete the exercises. All data are included in the file; no separate dataset is needed.\nYou are welcome to discuss the homework and R code with your classmates, but each student must complete and submit their own work.\nPlease keep the following in mind:\n*\nSubmit your…"
+    },
+    {
+      "id": "417933",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Activity: Label Ethernet Frame",
+      "due": "2026-11-20",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/417933",
+      "desc": ""
     },
     {
       "id": "416094",
