@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-11-18T03:53:01.884Z",
+  "builtAt": "2026-11-18T12:47:06.301Z",
   "items": [
-    {
-      "id": "412455",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Term Project: Milestone 2",
-      "due": "2026-10-18",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/412455",
-      "desc": "Due Sun, Oct 18\nRequirements\n------------\n* Convert your M1 system from UDP to TCP\n* Support a connection, not just a single message: client and server should exchange multiple sequential messages over one connection\n* Handle graceful disconnect (client or server can end the conversation cleanly, without crashing the other side)\nWhere AI can help\n-----------------\nUnderstanding the mechanical differences between UDP and TCP sockets in your language of choice, and debugging connection-state…"
-    },
     {
       "id": "415425",
       "courseKey": "mat219",
@@ -449,7 +439,7 @@
       "due": "2026-11-18",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/417934",
-      "desc": ""
+      "desc": "[W13_Collision_Simulation_Handout.pdf] (https://rollins.instructure.com/courses/25029/files/3628983?wrap=1)"
     },
     {
       "id": "412698",
@@ -540,6 +530,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25418/assignments/416095",
       "desc": "Demo: Monday, Nov 30, in class (everyone presents that day) Code + write-up due: Wednesday, Dec 2, 11:59 PM · 150 points\nThe finished project: a working system, a short write-up, and a live demo in class. This is where all four requirements come together.\n----------------\nWhat You Turn In\n----------------\nA finished program that meets all four project requirements:\n* A class design with at least one clear use of inheritance or interfaces\n* A functioning graphical user interface\n* At least one…"
+    },
+    {
+      "id": "418119",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Homework 11: ANOVA, linear regression, multiple regression",
+      "due": "2026-12-02",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/418119",
+      "desc": "[Here] (https://rollins.instructure.com/courses/25193/files/3632419?wrap=1) is the homework problems.\nInstruction\n-----------\n* Grab a piece of blank paper. If you prefer to do it on tablet, it's fine too.\n* Include your name and the following Honor Code in your homework:\nOn my honor, I have not given, nor received, nor witnessed any unauthorized assistance on this work.\n* Show your work. If you write answer only, there is no way for me to figure out whether it's your work, or friends' work, or…"
     },
     {
       "id": "412459",
