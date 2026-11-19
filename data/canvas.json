@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-11-19T02:39:36.991Z",
+  "builtAt": "2026-11-19T10:45:38.711Z",
   "items": [
-    {
-      "id": "415521",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Activity: Trace a NAT Table",
-      "due": "2026-10-19",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/415521",
-      "desc": "[W09_Trace_NAT_Table_Handout.pdf] (https://rollins.instructure.com/courses/25029/files/3571186?wrap=1)"
-    },
     {
       "id": "415564",
       "courseKey": "mat219",
@@ -440,6 +430,16 @@
       "allDay": false,
       "url": "https://rollins.instructure.com/courses/25193/assignments/417243",
       "desc": "Here is the [R HW 3] (https://rollins.instructure.com/courses/25193/files/3617503?wrap=1).\nThis is a guided assignment that introduces R functions we have not used in class. Read the explanations, run the provided code, and complete the exercises. All data are included in the file; no separate dataset is needed.\nYou are welcome to discuss the homework and R code with your classmates, but each student must complete and submit their own work.\nPlease keep the following in mind:\n*\nSubmit your…"
+    },
+    {
+      "id": "418507",
+      "courseKey": "mat219",
+      "code": "MAT 219",
+      "title": "Readiness Assessment - Multiple regression",
+      "due": "2026-11-20",
+      "allDay": false,
+      "url": "https://rollins.instructure.com/courses/25193/assignments/418507",
+      "desc": ""
     },
     {
       "id": "417933",
