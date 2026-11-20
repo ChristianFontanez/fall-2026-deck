@@ -1,26 +1,6 @@
 {
-  "builtAt": "2026-11-20T09:09:48.849Z",
+  "builtAt": "2026-11-20T17:53:44.106Z",
   "items": [
-    {
-      "id": "415564",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Readiness Assessment - Hypothesis Testing (Day 2) - one proportion",
-      "due": "2026-10-21",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/415564",
-      "desc": ""
-    },
-    {
-      "id": "415163",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Quiz 3 - Sampling Distr, CLT, CI",
-      "due": "2026-10-21",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/415163",
-      "desc": ""
-    },
     {
       "id": "415708",
       "courseKey": "cms450",
@@ -452,16 +432,6 @@
       "desc": "[W13_Label_Ethernet_Frame_Capture_Handout.pdf] (https://rollins.instructure.com/courses/25029/files/3628987?wrap=1)"
     },
     {
-      "id": "416094",
-      "courseKey": "cms270",
-      "code": "CMS 270",
-      "title": "Milestone 3: Design Pattern Applied",
-      "due": "2026-11-22",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25418/assignments/416094",
-      "desc": "Due: Sunday, Nov 22, 11:59 PM · 50 points\nCovers: design patterns, Strategy and Observer (Week 13). Builds on your Milestone 2 project.\n-------------------\nWhat Milestone 3 Is\n-------------------\nFind a real problem in your own project that a design pattern solves, and apply the pattern there. The key word is real. A pattern earns its place by fixing something that was awkward without it: an if/else chain that grows every time you add an option, or a method that has to know about every part of…"
-    },
-    {
       "id": "417840",
       "courseKey": "cms450",
       "code": "CMS 450",
@@ -470,6 +440,16 @@
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/417840",
       "desc": "REMINDER: This problem set is individual, hand-worked calculation and short-answer questions, meant to build the same skills tested on quizzes and exams. No AI on this, complete it yourself: the Final may ask you to compute a CRC and reason through multiple-access scenarios by hand with no resources, this problem set is your practice for exactly that.\nProblems\n--------\n1. CRC, individually. Data bits: 110101  |  Generator: 1011\n* Pad the data with the appropriate number of zero bits.\n* Perform…"
+    },
+    {
+      "id": "416094",
+      "courseKey": "cms270",
+      "code": "CMS 270",
+      "title": "Milestone 3: Design Pattern Applied",
+      "due": "2026-11-24",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25418/assignments/416094",
+      "desc": "Due: Sunday, Nov 22, 11:59 PM Due: Tuesday, Nov 24, 11:59 PM · 50 points\nCovers: design patterns, Strategy and Observer (Week 13). Builds on your Milestone 2 project.\n-------------------\nWhat Milestone 3 Is\n-------------------\nFind a real problem in your own project that a design pattern solves, and apply the pattern there. The key word is real. A pattern earns its place by fixing something that was awkward without it: an if/else chain that grows every time you add an option, or a method that…"
     },
     {
       "id": "417841",
