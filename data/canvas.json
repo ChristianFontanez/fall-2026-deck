@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-19T19:24:24.875Z",
+  "builtAt": "2026-11-20T01:26:18.713Z",
   "items": [
     {
       "id": "415564",
@@ -469,7 +469,7 @@
       "due": "2026-11-22",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/417840",
-      "desc": "REMINDER: This problem set is individual, hand-worked calculation and short-answer questions, meant to build the same skills tested on quizzes and exams. No AI on this, complete it yourself: the Final will ask you to compute a CRC and reason through multiple-access scenarios by hand with no resources, this problem set is your practice for exactly that.\nProblems\n--------\n1. CRC, individually. Data bits: 110101  |  Generator: 1011\n* Pad the data with the appropriate number of zero bits.\n* Perform…"
+      "desc": "REMINDER: This problem set is individual, hand-worked calculation and short-answer questions, meant to build the same skills tested on quizzes and exams. No AI on this, complete it yourself: the Final may ask you to compute a CRC and reason through multiple-access scenarios by hand with no resources, this problem set is your practice for exactly that.\nProblems\n--------\n1. CRC, individually. Data bits: 110101  |  Generator: 1011\n* Pad the data with the appropriate number of zero bits.\n* Perform…"
     },
     {
       "id": "417841",
