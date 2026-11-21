@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-11-20T23:47:28.009Z",
+  "builtAt": "2026-11-21T06:17:25.146Z",
   "items": [
-    {
-      "id": "415708",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Activity: IPv6 Scenarios & Tunneling Worksheet",
-      "due": "2026-10-21",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/415708",
-      "desc": "[W09_IPv6_Scenarios_Worksheet_Handout.pdf] (https://rollins.instructure.com/courses/25029/files/3575271?wrap=1)"
-    },
     {
       "id": "415726",
       "courseKey": "mat219",
@@ -432,6 +422,16 @@
       "desc": "[W13_Label_Ethernet_Frame_Capture_Handout.pdf] (https://rollins.instructure.com/courses/25029/files/3628987?wrap=1)"
     },
     {
+      "id": "418741",
+      "courseKey": "cms450",
+      "code": "CMS 450",
+      "title": "Pop Quiz 11/20",
+      "due": "2026-11-20",
+      "allDay": true,
+      "url": "https://rollins.instructure.com/courses/25029/assignments/418741",
+      "desc": ""
+    },
+    {
       "id": "417840",
       "courseKey": "cms450",
       "code": "CMS 450",
@@ -459,7 +459,7 @@
       "due": "2026-11-25",
       "allDay": true,
       "url": "https://rollins.instructure.com/courses/25029/assignments/417841",
-      "desc": ""
+      "desc": "Due: Wednesday, Nov 25, 11:59pm  |  Format: Individual  |  Est. time: ~35 min\nREAD FIRST: Work through the Week 14 page Switches vs. Routers & VLANs before you start this. Monday, Nov 23 has no class meeting, so this submission is your participation record for that day.\nNo AI on this, work it by hand: the Final will hand you a topology and a list of frames and ask you to build the tables yourself, with no resources. This is your practice for exactly that.\nLearning goal\n-------------\nTrace how…"
     },
     {
       "id": "412458",
