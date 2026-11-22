@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-11-22T08:10:03.042Z",
+  "builtAt": "2026-11-22T16:25:27.907Z",
   "items": [
-    {
-      "id": "415726",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Readiness Assessment - Hypothesis Testing (Day 3) - one proportion",
-      "due": "2026-10-23",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/415726",
-      "desc": ""
-    },
     {
       "id": "415709",
       "courseKey": "cms450",
