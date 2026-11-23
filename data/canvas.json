@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-11-23T02:54:12.631Z",
+  "builtAt": "2026-11-23T11:59:20.323Z",
   "items": [
-    {
-      "id": "415709",
-      "courseKey": "cms450",
-      "code": "CMS 450",
-      "title": "Activity: Design a Flow Table",
-      "due": "2026-10-23",
-      "allDay": true,
-      "url": "https://rollins.instructure.com/courses/25029/assignments/415709",
-      "desc": "[W09_Design_Flow_Table_Handout.pdf] (https://rollins.instructure.com/courses/25029/files/3579519?wrap=1)"
-    },
     {
       "id": "415250",
       "courseKey": "mat219",
