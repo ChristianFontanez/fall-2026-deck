@@ -1,16 +1,6 @@
 {
-  "builtAt": "2026-11-24T09:05:18.132Z",
+  "builtAt": "2026-11-24T20:13:52.711Z",
   "items": [
-    {
-      "id": "415250",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Homework 2 - Sampling Distribution, CLT, and Confidence Interval",
-      "due": "2026-10-25",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/415250",
-      "desc": "[Here] (https://rollins.instructure.com/courses/25193/files/3565084?wrap=1) is your first R lab homework. Here is the [data set] (https://rollins.instructure.com/courses/25193/files/3568168?wrap=1).\nYou are welcome to discuss the homework and R code with your classmates, but each student must complete and submit their own work.\nPlease keep the following in mind:\n* Submit your homework as an .Rmd file on Canvas.\n* Compile your R Markdown file before submitting to make sure it runs successfully.…"
-    },
     {
       "id": "412660",
       "courseKey": "cms450",
