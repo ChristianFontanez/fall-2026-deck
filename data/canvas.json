@@ -1,26 +1,6 @@
 {
-  "builtAt": "2026-11-25T13:29:00.930Z",
+  "builtAt": "2026-11-25T22:44:30.925Z",
   "items": [
-    {
-      "id": "415921",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Readiness Assessment - Hypothesis Testing (Day 4)",
-      "due": "2026-10-26",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/415921",
-      "desc": ""
-    },
-    {
-      "id": "415729",
-      "courseKey": "mat219",
-      "code": "MAT 219",
-      "title": "Homework 8: Hypothesis testing for one proportion",
-      "due": "2026-10-26",
-      "allDay": false,
-      "url": "https://rollins.instructure.com/courses/25193/assignments/415729",
-      "desc": "[Here] (https://rollins.instructure.com/courses/25193/files/3575535?wrap=1) is the homework problems.\nInstruction\n-----------\n* Grab a piece of blank paper. If you prefer to do it on tablet, it's fine too.\n* Include your name and the following Honor Code in your homework:\nOn my honor, I have not given, nor received, nor witnessed any unauthorized assistance on this work.\n* Show your work. If you write answer only, there is no way for me to figure out whether it's your work, or friends' work, or…"
-    },
     {
       "id": "416077",
       "courseKey": "cms450",
